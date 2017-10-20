@@ -1,8 +1,11 @@
 # ProjectNavi
-### Quick Infos
-An app being developed by: Justen Losoya, Erik Cedillo, Dean Schwartz, Joey Mayo, and Natan Shafran
-
-This app is being developed withing the scope of a school project for out Global IT class.
+### Quick Bit of Info
+This app is being developed within the scope of a school project for a Global IT class at GHS by:
+- Dean Schwartz
+- Erik Cedillo
+- Joey Mayo
+- Justen Losoya
+- Natan Shafran
 ## Project Description
 This app is going to be designed as a companion app for a student. This app is being developed with the intention of use at Grossmont High School, however it will be designed in a manner that shall provide an easy way to adapt it for schools nation-wide if we choose to do so.
 ## Features
