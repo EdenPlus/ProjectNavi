@@ -1,33 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/scheduleP1Teacher"
-        android:layout_width="@dimen/scheduleInputWidth"
-        android:layout_height="@dimen/scheduleInputHeight"
-        android:inputType="text"
-        android:text="@string/scheduleP1Teacher"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp" />
+        <EditText
+            android:id="@+id/scheduleP1Teacher"
+            android:layout_width="@dimen/scheduleInputWidth"
+            android:layout_height="@dimen/scheduleInputHeight"
+            android:inputType="text"
+            android:text="@string/scheduleP1Teacher"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
 
-    <EditText
-        android:id="@+id/scheduleP1Room"
-        android:layout_width="@dimen/scheduleInputWidth"
-        android:layout_height="@dimen/scheduleInputHeight"
-        android:inputType="number"
-        android:text="@string/scheduleP1Room"
-        android:layout_below="@+id/scheduleP1Teacher"
-        android:layout_alignStart="@+id/scheduleP1Teacher"
-        android:layout_alignEnd="@+id/scheduleP1Teacher" />
+        <EditText
+            android:id="@+id/scheduleP1Room"
+            android:layout_width="@dimen/scheduleInputWidth"
+            android:layout_height="@dimen/scheduleInputHeight"
+            android:inputType="number"
+            android:text="@string/scheduleP1Room"
+            android:layout_below="@+id/scheduleP1Teacher"
+            android:layout_alignStart="@+id/scheduleP1Teacher"
+            android:layout_alignEnd="@+id/scheduleP1Teacher" />
 
-    <EditText
-        android:id="@+id/scheduleP1Course"
-        android:layout_width="@dimen/scheduleInputWidth"
-        android:layout_height="@dimen/scheduleInputHeight"
-        android:inputType="text"
-        android:text="@string/scheduleP1Course"
-        android:layout_below="@+id/scheduleP1Room"
-        android:layout_alignStart="@+id/scheduleP1Room"
-        android:layout_alignEnd="@+id/scheduleP1Room" />
-</RelativeLayout>
+        <EditText
+            android:id="@+id/scheduleP1Course"
+            android:layout_width="@dimen/scheduleInputWidth"
+            android:layout_height="@dimen/scheduleInputHeight"
+            android:inputType="text"
+            android:text="@string/scheduleP1Course"
+            android:layout_below="@+id/scheduleP1Room"
+            android:layout_alignStart="@+id/scheduleP1Room"
+            android:layout_alignEnd="@+id/scheduleP1Room" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/scheduleP2Teacher"
+            android:layout_width="@dimen/scheduleInputWidth"
+            android:layout_height="@dimen/scheduleInputHeight"
+            android:inputType="text"
+            android:text="@string/scheduleP2Teacher"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/scheduleP2Room"
+            android:layout_width="@dimen/scheduleInputWidth"
+            android:layout_height="@dimen/scheduleInputHeight"
+            android:inputType="number"
+            android:text="@string/scheduleP2Room"
+            android:layout_below="@+id/scheduleP2Teacher"
+            android:layout_alignStart="@+id/scheduleP2Teacher"
+            android:layout_alignEnd="@+id/scheduleP2Teacher" />
+
+        <EditText
+            android:id="@+id/scheduleP2Course"
+            android:layout_width="@dimen/scheduleInputWidth"
+            android:layout_height="@dimen/scheduleInputHeight"
+            android:inputType="text"
+            android:text="@string/scheduleP1Course"
+            android:layout_below="@+id/scheduleP2Room"
+            android:layout_alignStart="@+id/scheduleP2Room"
+            android:layout_alignEnd="@+id/scheduleP2Room" />
+    </RelativeLayout>
+
+</LinearLayout>
