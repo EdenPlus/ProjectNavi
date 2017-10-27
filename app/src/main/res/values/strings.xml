@@ -8,4 +8,20 @@
     <string name="scheduleP2Teacher">Teacher2</string>
     <string name="scheduleP2Course">Course2</string>
     <string name="scheduleP2Room">Room2</string>
+    <string name="scheduleP3Room">Room3</string>
+    <string name="scheduleP3Teacher">Teacher3</string>
+    <string name="scheduleP3Course">Course3</string>
+    <string name="scheduleP4Room">Room4</string>
+    <string name="scheduleP4Teacher">Teacher4</string>
+    <string name="scheduleP4Course">Course4</string>
+    <string name="scheduleP5Room">Room5</string>
+    <string name="scheduleP5Teacher">Teacher5</string>
+    <string name="scheduleP5Course">Course5</string>
+    <string name="scheduleP6Room">Room6</string>
+    <string name="scheduleP6Teacher">Teacher6</string>
+    <string name="scheduleP6Course">Course6</string>
+    <string name="scheduleP7Room">Room7</string>
+    <string name="scheduleP7Teacher">Teacher7</string>
+    <string name="scheduleP7Course">Course7</string>
+
 </resources>
