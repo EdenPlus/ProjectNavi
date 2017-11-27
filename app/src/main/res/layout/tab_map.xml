@@ -4,10 +4,19 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <justenlosoya.projectnavi.TouchImageView
-        android:id="@+id/img"
+        android:id="@+id/mapImg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/building_map" />
+
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="swapMap"
+        android:text="Building"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
