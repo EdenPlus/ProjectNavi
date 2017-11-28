@@ -16,7 +16,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,46 +57,18 @@ public class MainActivity extends AppCompatActivity {
     // Beginning of button experiment 2
     public void swapMap(View v) {
         TouchImageView image = (TouchImageView) findViewById(R.id.mapImg);
-        /*
-        if (image. == R.drawable.building_map) {
+
+        if (image.getTag().equals(1)) {
             image.setImageResource(R.drawable.satellite_map);
+            image.setTag(2);
         }
         else {
             image.setImageResource(R.drawable.building_map);
+            image.setTag(1);
         }
-        */
-        image.setImageResource(R.drawable.building_map);
-    }
 
-    public void setSatelliteMap (View v) {
-        TouchImageView image = (TouchImageView) findViewById(R.id.mapImg);
-        image.setImageResource(R.drawable.satellite_map);
     }
     // End of button experiment 2
-
-    /*
-    // Beginning of button experiment
-    Button buildingButton = (Button) findViewById(R.id.building);
-
-        buildingButton.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            TouchImageView image = (TouchImageView) findViewById(R.id.img);
-            image.setImageResource(R.drawable.building_map);
-        }
-    });
-
-    Button satelliteButton = (Button) findViewById(R.id.satellite);
-
-        satelliteButton.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            TouchImageView image = (TouchImageView) findViewById(R.id.img);
-            image.setImageResource(R.drawable.satellite_map);
-        }
-    });
-    // End of button experiment
-    */
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
