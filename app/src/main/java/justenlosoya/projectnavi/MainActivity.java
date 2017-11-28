@@ -4,18 +4,18 @@ import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.TextView;
+import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,22 +53,6 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
     }
-
-    // Beginning of button experiment 2
-    public void swapMap(View v) {
-        TouchImageView image = (TouchImageView) findViewById(R.id.mapImg);
-
-        if (image.getTag().equals(1)) {
-            image.setImageResource(R.drawable.satellite_map);
-            image.setTag(2);
-        }
-        else {
-            image.setImageResource(R.drawable.building_map);
-            image.setTag(1);
-        }
-
-    }
-    // End of button experiment 2
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -170,6 +154,37 @@ public class MainActivity extends AppCompatActivity {
                     return "SCHEDULE";
             }
             return null;
+        }
+    }
+
+    public void swapMap(View v) {
+        TouchImageView image = (TouchImageView) findViewById(R.id.mapImg);
+
+        if (image.getTag().equals(1)) {
+            image.setImageResource(R.drawable.satellite_map);
+            image.setTag(2);
+        }
+        else {
+            image.setImageResource(R.drawable.building_map);
+            image.setTag(1);
+        }
+
+    }
+
+    public void toggleMap(View v) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) v).isChecked();
+
+        // Check which radio button was clicked
+        switch(v.getId()) {
+            case R.id.satelliteRadio:
+                if (checked)
+                    // Pirates are the best
+                    break;
+            case R.id.buildingRadio:
+                if (checked)
+                    // Ninjas rule
+                    break;
         }
     }
 }
