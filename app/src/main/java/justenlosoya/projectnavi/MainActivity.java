@@ -1,5 +1,7 @@
 package justenlosoya.projectnavi;
 
+import android.graphics.drawable.Drawable;
+import android.support.annotation.IdRes;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -14,8 +16,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.RadioButton;
+import android.widget.RadioGroup.OnCheckedChangeListener;
+import android.content.SharedPreferences;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -133,14 +137,17 @@ public class MainActivity extends AppCompatActivity {
                 case 2:
                     TabSchedule tabSchedule = new TabSchedule();
                     return tabSchedule;
+                case 3:
+                    TabSettings tabSettings = new TabSettings();
+                    return tabSettings;
             }
             return null;
         }
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            // Show 4 total pages.
+            return 4;
         }
 
         @Override
@@ -152,6 +159,8 @@ public class MainActivity extends AppCompatActivity {
                     return "MAP";
                 case 2:
                     return "SCHEDULE";
+                case 3:
+                    return "SETTINGS";
             }
             return null;
         }
@@ -161,30 +170,52 @@ public class MainActivity extends AppCompatActivity {
         TouchImageView image = (TouchImageView) findViewById(R.id.mapImg);
 
         if (image.getTag().equals(1)) {
-            image.setImageResource(R.drawable.satellite_map);
+            image.setImageResource(R.drawable.s_map);
             image.setTag(2);
         }
         else {
-            image.setImageResource(R.drawable.building_map);
+            image.setImageResource(R.drawable.b_map);
             image.setTag(1);
         }
 
     }
+/*
+        // Radio group experiment 2
+        final RadioGroup mapRadio = (RadioGroup) findViewById(R.id.mapRadioGroup);
+        mapRadio.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int checkedID) {
+                TouchImageView image = (TouchImageView) findViewById(R.id.mapImg);
 
-    public void toggleMap(View v) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) v).isChecked();
+                switch (radioGroup.getId()) {
+                    case R.id.mapRadioGroup:
+                        if (checkedID == R.id.buildingRadio) {
+                            image.setImageResource(R.drawable.building_map);
+                        }
+                        else if (checkedID == R.id.satelliteRadio) {
+                            image.setImageResource(R.drawable.satellite_map);
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
+        });
+        // Radio group experiment 2
 
-        // Check which radio button was clicked
-        switch(v.getId()) {
-            case R.id.satelliteRadio:
-                if (checked)
-                    // Pirates are the best
-                    break;
+    public void toggleMap(View view) {
+        TouchImageView image = (TouchImageView) findViewById(R.id.mapImg);
+
+        switch (view.getId()) {
             case R.id.buildingRadio:
-                if (checked)
-                    // Ninjas rule
-                    break;
+                image.setImageResource(R.drawable.b_map);
+                break;
+            case R.id.satelliteRadio:
+                image.setImageResource(R.drawable.s_map);
+                break;
+            default:
+                break;
         }
     }
+*/
 }
