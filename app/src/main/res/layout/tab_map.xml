@@ -11,16 +11,5 @@
         android:scaleType="centerCrop"
         android:src="@drawable/b_map"
         android:tag="1" />
-<!--
-    <Button
-        android:id="@+id/mapButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/colorPrimaryText"
-        android:onClick="swapMap"
-        android:text="@string/mapButton"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
--->
+
 </RelativeLayout>

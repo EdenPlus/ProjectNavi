@@ -1,5 +1,6 @@
 package justenlosoya.projectnavi;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.IdRes;
 import android.support.design.widget.TabLayout;
@@ -16,10 +17,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.content.SharedPreferences;
+import android.content.Context;
+
+import justenlosoya.projectnavi.TouchImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
      */
     private ViewPager mViewPager;
 
+    SharedPreferences sharedpreferences;
+    TouchImageView mapImage;
+    public static final String mypreference = "mypref";
+    public static final String Map = "mapKey";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +62,23 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
+/*
+        mapImage = (TouchImageView) findViewById(R.id.mapImg);
+        sharedpreferences = getSharedPreferences(mypreference, 0);
+        //if (sharedpreferences.contains("Map")) {
+            int temp = sharedpreferences.getInt("Map", R.drawable.b_map);
+            mapImage.setImageResource(temp);
+            mapImage.setTag(temp);
+            if (mapImage.getTag().equals(R.drawable.b_map)) {
+                RadioButton b_button = (RadioButton) findViewById(R.id.buildingRadio);
+                b_button.toggle();
+            }
+            else if (mapImage.getTag().equals(R.drawable.s_map)) {
+                RadioButton s_button = (RadioButton) findViewById(R.id.satelliteRadio);
+                s_button.toggle();
+            }
+        //}
+*/
     }
 
     @Override
@@ -70,14 +93,18 @@ public class MainActivity extends AppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                displayPreferences();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
+    }
 
-        return super.onOptionsItemSelected(item);
+    public void displayPreferences() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
     }
 
     /**
@@ -136,18 +163,15 @@ public class MainActivity extends AppCompatActivity {
                     return tabMap;
                 case 2:
                     TabSchedule tabSchedule = new TabSchedule();
-                    return tabSchedule;
-                case 3:
-                    TabSettings tabSettings = new TabSettings();
-                    return tabSettings;
+                return tabSchedule;
             }
             return null;
         }
 
         @Override
         public int getCount() {
-            // Show 4 total pages.
-            return 4;
+            // Show 3 total pages.
+            return 3;
         }
 
         @Override
@@ -159,63 +183,9 @@ public class MainActivity extends AppCompatActivity {
                     return "MAP";
                 case 2:
                     return "SCHEDULE";
-                case 3:
-                    return "SETTINGS";
             }
             return null;
         }
     }
 
-    public void swapMap(View v) {
-        TouchImageView image = (TouchImageView) findViewById(R.id.mapImg);
-
-        if (image.getTag().equals(1)) {
-            image.setImageResource(R.drawable.s_map);
-            image.setTag(2);
-        }
-        else {
-            image.setImageResource(R.drawable.b_map);
-            image.setTag(1);
-        }
-
-    }
-/*
-        // Radio group experiment 2
-        final RadioGroup mapRadio = (RadioGroup) findViewById(R.id.mapRadioGroup);
-        mapRadio.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int checkedID) {
-                TouchImageView image = (TouchImageView) findViewById(R.id.mapImg);
-
-                switch (radioGroup.getId()) {
-                    case R.id.mapRadioGroup:
-                        if (checkedID == R.id.buildingRadio) {
-                            image.setImageResource(R.drawable.building_map);
-                        }
-                        else if (checkedID == R.id.satelliteRadio) {
-                            image.setImageResource(R.drawable.satellite_map);
-                        }
-                        break;
-                    default:
-                        break;
-                }
-            }
-        });
-        // Radio group experiment 2
-
-    public void toggleMap(View view) {
-        TouchImageView image = (TouchImageView) findViewById(R.id.mapImg);
-
-        switch (view.getId()) {
-            case R.id.buildingRadio:
-                image.setImageResource(R.drawable.b_map);
-                break;
-            case R.id.satelliteRadio:
-                image.setImageResource(R.drawable.s_map);
-                break;
-            default:
-                break;
-        }
-    }
-*/
 }
