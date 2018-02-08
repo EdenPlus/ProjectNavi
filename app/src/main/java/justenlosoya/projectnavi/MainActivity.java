@@ -2,6 +2,7 @@ package justenlosoya.projectnavi;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.preference.PreferenceManager;
 import android.support.annotation.IdRes;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -62,23 +63,16 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-/*
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         mapImage = (TouchImageView) findViewById(R.id.mapImg);
-        sharedpreferences = getSharedPreferences(mypreference, 0);
-        //if (sharedpreferences.contains("Map")) {
-            int temp = sharedpreferences.getInt("Map", R.drawable.b_map);
-            mapImage.setImageResource(temp);
-            mapImage.setTag(temp);
-            if (mapImage.getTag().equals(R.drawable.b_map)) {
-                RadioButton b_button = (RadioButton) findViewById(R.id.buildingRadio);
-                b_button.toggle();
-            }
-            else if (mapImage.getTag().equals(R.drawable.s_map)) {
-                RadioButton s_button = (RadioButton) findViewById(R.id.satelliteRadio);
-                s_button.toggle();
-            }
-        //}
-*/
+        try {
+            TextView tvc = (TextView) findViewById(R.id.textViewC);
+            tvc.setText(new String("Test"));
+        } catch (NullPointerException e) {
+            // Do something
+        }
+        //mapImage.setImageResource(prefs.getInt("mapImage", R.drawable.b_map));
     }
 
     @Override
