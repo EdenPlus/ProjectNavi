@@ -6,15 +6,22 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * Created by justenlosoya on 10/20/17.
  */
 
 public class TabCalendar extends Fragment {
+    View inf;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.tab_calendar, container, false);
+        inf = inflater.inflate(R.layout.tab_calendar, container, false);
+        // Start Layout Preference Changes
+
+        // End layout Preference Changes
+        return inf;
     }
+
 }

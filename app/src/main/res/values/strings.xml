@@ -20,8 +20,8 @@
     </string-array>
 
     <string-array name="mapDraws">
-        <item>@drawable/b_map</item>
-        <item>@drawable/s_map</item>
+        <item>b_map</item>
+        <item>s_map</item>
     </string-array>
 
     <!-- Example settings for Data & Sync -->

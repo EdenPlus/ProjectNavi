@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.preference.PreferenceManager;
 import android.support.annotation.IdRes;
 import android.support.design.widget.TabLayout;
+import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -13,6 +14,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.text.Layout;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -21,6 +24,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.content.SharedPreferences;
 import android.content.Context;
+
+import java.util.List;
 
 import justenlosoya.projectnavi.TouchImageView;
 
@@ -43,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     SharedPreferences sharedpreferences;
     TouchImageView mapImage;
+    TextView tvc;
     public static final String mypreference = "mypref";
     public static final String Map = "mapKey";
 
@@ -64,14 +70,33 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        mapImage = (TouchImageView) findViewById(R.id.mapImg);
         try {
-            TextView tvc = (TextView) findViewById(R.id.textViewC);
-            tvc.setText(new String("Test"));
+            Fragment testFrag = mSectionsPagerAdapter.getItem(0);
+            View v = testFrag.getView();
+            TextView t = v.findViewById(R.id.textViewC);
+            t.setText("Agh");
+
+            /*
+            View fragView = tabLayout.getTabAt(0).getCustomView();
+
+            TextView t = fragView.findViewById(R.id.textViewC);
+
+            t.setText("Agh");
+
+            Fragment someFragment = getSupportFragmentManager().findFragmentByTag("MapFragment");
+            View fragmentView = someFragment.getView();
+
+            TouchImageView t = fragmentView.findViewById(R.id.mapImg);
+
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+            t.setImageResource(prefs.getInt("mapImage", R.drawable.b_map));
+            */
         } catch (NullPointerException e) {
-            // Do something
+            // Ugh
         }
+
+
+        //mapImage = (TouchImageView) findViewById(R.id.mapImg);
         //mapImage.setImageResource(prefs.getInt("mapImage", R.drawable.b_map));
     }
 
