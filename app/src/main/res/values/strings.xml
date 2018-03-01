@@ -15,13 +15,13 @@
     <string name="mapSettingLabel">Map Type</string>
 
     <string-array name="mapLabels">
-        <item>Building Map</item>
         <item>Satellite Map</item>
+        <item>Building Map</item>
     </string-array>
 
     <string-array name="mapDraws">
-        <item>b_map</item>
         <item>s_map</item>
+        <item>b_map</item>
     </string-array>
 
     <!-- Example settings for Data & Sync -->

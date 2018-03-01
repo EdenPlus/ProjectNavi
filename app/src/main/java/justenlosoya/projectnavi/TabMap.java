@@ -14,6 +14,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static android.preference.PreferenceManager.getDefaultSharedPreferences;
+
 /**
  * Created by justenlosoya on 10/20/17.
  */
@@ -28,7 +30,7 @@ public class TabMap extends Fragment {
         // Start Layout Preference Changes
         try {
             TouchImageView mapView = (TouchImageView) inf.findViewById(R.id.mapImg);
-            SharedPreferences prefs = this.getActivity().getSharedPreferences("mypref", Context.MODE_PRIVATE);
+            SharedPreferences prefs = getDefaultSharedPreferences(this.getActivity().getApplicationContext());
             String image = prefs.getString("mapImage", "b_map");
             if (image.equals("b_map")) {
                 mapView.setImageResource(R.drawable.b_map);

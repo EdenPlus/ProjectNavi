@@ -169,7 +169,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
     protected boolean isValidFragment(String fragmentName) {
         return PreferenceFragment.class.getName().equals(fragmentName)
                 || GeneralPreferenceFragment.class.getName().equals(fragmentName)
-                || DataSyncPreferenceFragment.class.getName().equals(fragmentName)
+                /*|| DataSyncPreferenceFragment.class.getName().equals(fragmentName)*/
                 || NotificationPreferenceFragment.class.getName().equals(fragmentName);
     }
 
@@ -236,7 +236,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
     /**
      * This fragment shows data and sync preferences only. It is used when the
      * activity is showing a two-pane settings UI.
-     */
+     *
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public static class DataSyncPreferenceFragment extends PreferenceFragment {
         @Override
@@ -261,5 +261,5 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             }
             return super.onOptionsItemSelected(item);
         }
-    }
+    }*/
 }
