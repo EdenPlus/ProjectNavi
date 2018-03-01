@@ -47,10 +47,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager mViewPager;
 
     SharedPreferences sharedpreferences;
-    TouchImageView mapImage;
-    TextView tvc;
     public static final String mypreference = "mypref";
-    public static final String Map = "mapKey";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,34 +67,6 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-        try {
-            Fragment testFrag = mSectionsPagerAdapter.getItem(0);
-            View v = testFrag.getView();
-            TextView t = v.findViewById(R.id.textViewC);
-            t.setText("Agh");
-
-            /*
-            View fragView = tabLayout.getTabAt(0).getCustomView();
-
-            TextView t = fragView.findViewById(R.id.textViewC);
-
-            t.setText("Agh");
-
-            Fragment someFragment = getSupportFragmentManager().findFragmentByTag("MapFragment");
-            View fragmentView = someFragment.getView();
-
-            TouchImageView t = fragmentView.findViewById(R.id.mapImg);
-
-            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-            t.setImageResource(prefs.getInt("mapImage", R.drawable.b_map));
-            */
-        } catch (NullPointerException e) {
-            // Ugh
-        }
-
-
-        //mapImage = (TouchImageView) findViewById(R.id.mapImg);
-        //mapImage.setImageResource(prefs.getInt("mapImage", R.drawable.b_map));
     }
 
     @Override
