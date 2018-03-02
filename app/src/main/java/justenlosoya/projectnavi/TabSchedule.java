@@ -12,9 +12,14 @@ import android.view.ViewGroup;
  */
 
 public class TabSchedule extends Fragment {
+    View inf;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.tab_schedule, container, false);
+        inf = inflater.inflate(R.layout.tab_schedule, container, false);
+        // Start Layout Preference Changes
+
+        // End layout Preference Changes
+        return inf;
     }
 }

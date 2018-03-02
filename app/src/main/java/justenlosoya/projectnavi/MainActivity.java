@@ -1,21 +1,33 @@
 package justenlosoya.projectnavi;
 
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.preference.PreferenceManager;
+import android.support.annotation.IdRes;
 import android.support.design.widget.TabLayout;
+import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
+import android.text.Layout;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.TextView;
+import android.content.SharedPreferences;
+import android.content.Context;
+
+import java.util.List;
+
+import justenlosoya.projectnavi.TouchImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
+
+    SharedPreferences sharedpreferences;
+    public static final String mypreference = "mypref";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -67,14 +81,18 @@ public class MainActivity extends AppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                displayPreferences();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
+    }
 
-        return super.onOptionsItemSelected(item);
+    public void displayPreferences() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
     }
 
     /**
@@ -133,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
                     return tabMap;
                 case 2:
                     TabSchedule tabSchedule = new TabSchedule();
-                    return tabSchedule;
+                return tabSchedule;
             }
             return null;
         }
@@ -157,4 +175,5 @@ public class MainActivity extends AppCompatActivity {
             return null;
         }
     }
+
 }
