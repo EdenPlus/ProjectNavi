@@ -3,9 +3,14 @@
     <!-- These settings headers are only used on tablets. -->
 
     <header
-        android:fragment="justenlosoya.projectnavi.SettingsActivity$GeneralPreferenceFragment"
+        android:fragment="justenlosoya.projectnavi.SettingsActivity$MapPreferenceFragment"
         android:icon="@drawable/ic_info_black_24dp"
-        android:title="@string/pref_header_general" />
+        android:title="@string/pref_header_map" />
+
+    <header
+        android:fragment="justenlosoya.projectnavi.SettingsActivity$SchedulePreferenceFragment"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="@string/pref_header_schedule" />
 
     <header
         android:fragment="justenlosoya.projectnavi.SettingsActivity$NotificationPreferenceFragment"

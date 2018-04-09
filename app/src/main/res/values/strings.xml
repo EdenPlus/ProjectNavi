@@ -1,67 +1,97 @@
 <resources>
+    <!-- Global Stuff -->
     <string name="app_name">Project: Navi</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
-    <string name="mapButton">Toggle Map</string>
-    <string name="buildingSetting">Building Map</string>
-    <string name="satelliteSetting">Satellite Map</string>
     <string name="title_activity_settings">Settings</string>
+    <!-- End Global Stuff -->
 
-    <string name="calendarText">Calendar</string>
-
-    <!-- General Settings -->
-    <string name="pref_header_general">General</string>
-
+    <!-- Map Stuff -->
+    <string name="pref_header_map">Map</string>
     <string name="mapSettingLabel">Map Type</string>
-
     <string-array name="mapLabels">
         <item>Satellite Map</item>
         <item>Building Map</item>
     </string-array>
-
     <string-array name="mapDraws">
         <item>s_map</item>
         <item>b_map</item>
     </string-array>
+    <string name="mapButton">Toggle Map</string>
+    <string name="buildingSetting">Building Map</string>
+    <string name="satelliteSetting">Satellite Map</string>
+    <string name="search_hint">Search Hint</string>
+    <!-- Room Number Stuff -->
+        <string-array name="b500">
+            <item>Room 500</item>
+            <item>Room 505</item>
+            <item>Room 510</item>
+            <item>Room 515</item>
+            <item>Room 520</item>
+            <item>Room 525</item>
+            <item>Room 530</item>
+            <item>Room 535</item>
+            <item>Room 540</item>
+            <item>Room 545</item>
+            <item>Room 550</item>
+            <item>Room 555</item>
+            <item>Room 560</item>
+        </string-array>
+    <!-- End Room Number Stuff -->
+    <!-- End Map Stuff -->
 
-    <!-- Example settings for Data & Sync -->
-    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <!-- Calendar Stuff -->
+    <string name="calendarText">Calendar</string>
+    <!-- End Calendar Stuff -->
 
-    <string name="pref_title_sync_frequency">Sync frequency</string>
-    <string-array name="pref_sync_frequency_titles">
-        <item>15 minutes</item>
-        <item>30 minutes</item>
-        <item>1 hour</item>
-        <item>3 hours</item>
-        <item>6 hours</item>
-        <item>Never</item>
-    </string-array>
-    <string-array name="pref_sync_frequency_values">
-        <item>15</item>
-        <item>30</item>
-        <item>60</item>
-        <item>180</item>
-        <item>360</item>
-        <item>-1</item>
-    </string-array>
+    <!-- Schedule Settings -->
+    <string name="pref_header_schedule">Schedule</string>
 
-    <string-array name="list_preference_entries">
-        <item>Entry 1</item>
-        <item>Entry 2</item>
-        <item>Entry 3</item>
-    </string-array>
+    <!-- Periods -->
+    <string name="per1">Period 1</string>
+    <string name="per2">Period 2</string>
+    <string name="per3">Period 3</string>
+    <string name="per4">Period 4</string>
+    <string name="per5">Period 5</string>
+    <string name="per6">Period 6</string>
+    <string name="per7">Period 7</string>
 
-    <string-array name="list_preference_entry_values">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
+    <!-- Classes -->
+    <array name="classLabels">
+        <item>None</item>
+        <item>Course 1</item>
+        <item>Course 2</item>
+        <item>Course 3</item>
+    </array>
+    <array name="classValues">
+        <item>c0</item>
+        <item>c1</item>
+        <item>c2</item>
+        <item>c3</item>
+    </array>
+    <array name="c0">
+        <item>None</item>
+        <item>None</item>
+        <item>None</item>
+    </array>
+    <array name="c1">
+        <item>Room 1</item>
+        <item>Course 1</item>
+        <item>Teacher 1</item>
+    </array>
+    <array name="c2">
+        <item>Room 2</item>
+        <item>Course 2</item>
+        <item>Teacher 2</item>
+    </array>
+    <array name="c3">
+        <item>Room 3</item>
+        <item>Course 3</item>
+        <item>Teacher 3</item>
+    </array>
+    <!-- Schedule Settings -->
 
-    <string-array name="multi_select_list_preference_default_value" />
-
-    <string name="pref_title_system_sync_settings">System sync settings</string>
-
-    <!-- Example settings for Notifications -->
+    <!-- Notification Settings -->
     <string name="pref_header_notifications">Notifications</string>
 
     <string name="pref_title_new_message_notifications">New message notifications</string>
@@ -73,4 +103,5 @@
     <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_schedule">ScheduleActivity</string>
     <string name="title_activity_calendar">CalendarActivity</string>
+    <!-- End Notification Settings -->
 </resources>

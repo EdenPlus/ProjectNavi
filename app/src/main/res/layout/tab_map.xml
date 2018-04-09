@@ -7,6 +7,13 @@
     android:tag="MapFragment"
     tools:context="justenlosoya.projectnavi.MainActivity">
 
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
     <justenlosoya.projectnavi.TouchImageView
         android:id="@+id/mapImg"
         android:layout_width="match_parent"

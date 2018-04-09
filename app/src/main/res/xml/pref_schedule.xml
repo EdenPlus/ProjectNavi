@@ -1,0 +1,12 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/classLabels"
+        android:entryValues="@array/classValues"
+        android:key="per1Class"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/per1"/>
+
+</PreferenceScreen>

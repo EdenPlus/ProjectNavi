@@ -38,8 +38,6 @@ public class TabMap extends Fragment {
             else {
                 mapView.setImageResource(R.drawable.s_map);
             }
-            //mapView.setImageResource(Integer.parseInt(image));
-            //mapView.setImageResource(prefs.getInt("mapImage", R.drawable.b_map));
         } catch (NullPointerException e) {
             // Ugh
         }

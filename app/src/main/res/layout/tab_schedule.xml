@@ -7,12 +7,548 @@
     android:tag="ScheduleFragment"
     tools:context="justenlosoya.projectnavi.MainActivity">
 
-    <TextView
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:id="@+id/textViewS"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="Schedule" />
+        android:id="@+id/p1Layout">
+
+        <TextView
+            android:id="@+id/p1Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/schedule_header_size"
+            android:text="Period 1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p1Header"
+            android:orientation="horizontal"
+            android:id="@+id/p1Info">
+
+            <TextView
+                android:id="@+id/p1Teacher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Teacher" />
+
+            <TextView
+                android:id="@+id/p1Course"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Course" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p1Info"
+            android:orientation="horizontal"
+            android:id="@+id/p1TimeAndPlace">
+
+            <TextView
+                android:id="@+id/p1Room"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Room" />
+
+            <TextView
+                android:id="@+id/p1TimeTill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time Till" />
+
+            <TextView
+                android:id="@+id/p1TimeAt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time At" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p1Layout"
+        android:id="@+id/p2Layout">
+
+        <TextView
+            android:id="@+id/p2Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/schedule_header_size"
+            android:text="Period 2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p2Header"
+            android:orientation="horizontal"
+            android:id="@+id/p2Info">
+
+            <TextView
+                android:id="@+id/p2Teacher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Teacher" />
+
+            <TextView
+                android:id="@+id/p2Course"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Course" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p2Info"
+            android:orientation="horizontal"
+            android:id="@+id/p2TimeAndPlace">
+
+            <TextView
+                android:id="@+id/p2Room"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Room" />
+
+            <TextView
+                android:id="@+id/p2TimeTill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time Till" />
+
+            <TextView
+                android:id="@+id/p2TimeAt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time At" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p2Layout"
+        android:id="@+id/p3Layout">
+
+        <TextView
+            android:id="@+id/p3Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/schedule_header_size"
+            android:text="Period 3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p3Header"
+            android:orientation="horizontal"
+            android:id="@+id/p3Info">
+
+            <TextView
+                android:id="@+id/p3Teacher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Teacher" />
+
+            <TextView
+                android:id="@+id/p3Course"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Course" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p3Info"
+            android:orientation="horizontal"
+            android:id="@+id/p3TimeAndPlace">
+
+            <TextView
+                android:id="@+id/p3Room"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Room" />
+
+            <TextView
+                android:id="@+id/p3TimeTill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time Till" />
+
+            <TextView
+                android:id="@+id/p3TimeAt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time At" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p3Layout"
+        android:id="@+id/p4Layout">
+
+        <TextView
+            android:id="@+id/p4Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/schedule_header_size"
+            android:text="Period 4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p4Header"
+            android:orientation="horizontal"
+            android:id="@+id/p4Info">
+
+            <TextView
+                android:id="@+id/p4Teacher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Teacher" />
+
+            <TextView
+                android:id="@+id/p4Course"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Course" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p4Info"
+            android:orientation="horizontal"
+            android:id="@+id/p4TimeAndPlace">
+
+            <TextView
+                android:id="@+id/p4Room"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Room" />
+
+            <TextView
+                android:id="@+id/p4TimeTill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time Till" />
+
+            <TextView
+                android:id="@+id/p4TimeAt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time At" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p4Layout"
+        android:id="@+id/p5Layout">
+
+        <TextView
+            android:id="@+id/p5Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/schedule_header_size"
+            android:text="Period 5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p5Header"
+            android:orientation="horizontal"
+            android:id="@+id/p5Info">
+
+            <TextView
+                android:id="@+id/p5Teacher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Teacher" />
+
+            <TextView
+                android:id="@+id/p5Course"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Course" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p5Info"
+            android:orientation="horizontal"
+            android:id="@+id/p5TimeAndPlace">
+
+            <TextView
+                android:id="@+id/p5Room"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Room" />
+
+            <TextView
+                android:id="@+id/p5TimeTill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time Till" />
+
+            <TextView
+                android:id="@+id/p5TimeAt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time At" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p5Layout"
+        android:id="@+id/p6Layout">
+
+        <TextView
+            android:id="@+id/p6Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/schedule_header_size"
+            android:text="Period 6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p6Header"
+            android:orientation="horizontal"
+            android:id="@+id/p6Info">
+
+            <TextView
+                android:id="@+id/p6Teacher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Teacher" />
+
+            <TextView
+                android:id="@+id/p6Course"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Course" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p6Info"
+            android:orientation="horizontal"
+            android:id="@+id/p6TimeAndPlace">
+
+            <TextView
+                android:id="@+id/p6Room"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Room" />
+
+            <TextView
+                android:id="@+id/p6TimeTill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time Till" />
+
+            <TextView
+                android:id="@+id/p6TimeAt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time At" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p6Layout"
+        android:id="@+id/p7Layout">
+
+        <TextView
+            android:id="@+id/p7Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/schedule_header_size"
+            android:text="Period 7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p7Header"
+            android:orientation="horizontal"
+            android:id="@+id/p7Info">
+
+            <TextView
+                android:id="@+id/p7Teacher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Teacher" />
+
+            <TextView
+                android:id="@+id/p7Course"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Course" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p7Info"
+            android:orientation="horizontal"
+            android:id="@+id/p7TimeAndPlace">
+
+            <TextView
+                android:id="@+id/p7Room"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Room" />
+
+            <TextView
+                android:id="@+id/p7TimeTill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time Till" />
+
+            <TextView
+                android:id="@+id/p7TimeAt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_item_size"
+                android:text="Time At" />
+        </LinearLayout>
+
+    </RelativeLayout>
 </RelativeLayout>
