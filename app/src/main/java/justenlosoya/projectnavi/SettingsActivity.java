@@ -220,12 +220,12 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             // updated to reflect the new value, per the Android Design
             // guidelines.
             bindPreferenceSummaryToValue(findPreference("p1Class"));
-            //bindPreferenceSummaryToValue(findPreference("p2Class"));
-            //bindPreferenceSummaryToValue(findPreference("p3Class"));
-            //bindPreferenceSummaryToValue(findPreference("p4Class"));
-            //bindPreferenceSummaryToValue(findPreference("p5Class"));
-            //bindPreferenceSummaryToValue(findPreference("p6Class"));
-            //bindPreferenceSummaryToValue(findPreference("p7Class"));
+            bindPreferenceSummaryToValue(findPreference("p2Class"));
+            bindPreferenceSummaryToValue(findPreference("p3Class"));
+            bindPreferenceSummaryToValue(findPreference("p4Class"));
+            bindPreferenceSummaryToValue(findPreference("p5Class"));
+            bindPreferenceSummaryToValue(findPreference("p6Class"));
+            bindPreferenceSummaryToValue(findPreference("p7Class"));
         }
 
         @Override
