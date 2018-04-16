@@ -28,6 +28,8 @@ public class TabSchedule extends Fragment {
         try {
             Resources res = getResources();
             SharedPreferences prefs = getDefaultSharedPreferences(this.getActivity().getApplicationContext());
+            String daySchedule = prefs.getString("daySchedule", "regular_day");
+            int thisSchedule = getId(daySchedule, R.array.class);
 
             // Period 1
             String p1Class = prefs.getString("p1Class", "c0");
@@ -45,7 +47,7 @@ public class TabSchedule extends Fragment {
                 p1Course.setText(res.getStringArray(p1ResID)[1]);
                 p1Teacher.setText(res.getStringArray(p1ResID)[2]);
                 p1TimeTill.setText("0:00");
-                p1TimeAt.setText("0:00");
+                p1TimeAt.setText(res.getStringArray(thisSchedule)[0]);
             } catch (Exception e) {
                 // SCREAM!!!!
             }
@@ -66,7 +68,7 @@ public class TabSchedule extends Fragment {
                 p2Course.setText(res.getStringArray(p2ResID)[1]);
                 p2Teacher.setText(res.getStringArray(p2ResID)[2]);
                 p2TimeTill.setText("0:00");
-                p2TimeAt.setText("0:00");
+                p2TimeAt.setText(res.getStringArray(thisSchedule)[2]);
             } catch (Exception e) {
                 // SCREAM!!!!
             }
@@ -87,7 +89,7 @@ public class TabSchedule extends Fragment {
                 p3Course.setText(res.getStringArray(p3ResID)[1]);
                 p3Teacher.setText(res.getStringArray(p3ResID)[2]);
                 p3TimeTill.setText("0:00");
-                p3TimeAt.setText("0:00");
+                p3TimeAt.setText(res.getStringArray(thisSchedule)[4]);
             } catch (Exception e) {
                 // SCREAM!!!!
             }
@@ -108,7 +110,7 @@ public class TabSchedule extends Fragment {
                 p4Course.setText(res.getStringArray(p4ResID)[1]);
                 p4Teacher.setText(res.getStringArray(p4ResID)[2]);
                 p4TimeTill.setText("0:00");
-                p4TimeAt.setText("0:00");
+                p4TimeAt.setText(res.getStringArray(thisSchedule)[6]);
             } catch (Exception e) {
                 // SCREAM!!!!
             }
@@ -129,7 +131,7 @@ public class TabSchedule extends Fragment {
                 p5Course.setText(res.getStringArray(p5ResID)[1]);
                 p5Teacher.setText(res.getStringArray(p5ResID)[2]);
                 p5TimeTill.setText("0:00");
-                p5TimeAt.setText("0:00");
+                p5TimeAt.setText(res.getStringArray(thisSchedule)[8]);
             } catch (Exception e) {
                 // SCREAM!!!!
             }
@@ -150,7 +152,7 @@ public class TabSchedule extends Fragment {
                 p6Course.setText(res.getStringArray(p6ResID)[1]);
                 p6Teacher.setText(res.getStringArray(p6ResID)[2]);
                 p6TimeTill.setText("0:00");
-                p6TimeAt.setText("0:00");
+                p6TimeAt.setText(res.getStringArray(thisSchedule)[10]);
             } catch (Exception e) {
                 // SCREAM!!!!
             }
@@ -171,7 +173,7 @@ public class TabSchedule extends Fragment {
                 p7Course.setText(res.getStringArray(p7ResID)[1]);
                 p7Teacher.setText(res.getStringArray(p7ResID)[2]);
                 p7TimeTill.setText("0:00");
-                p7TimeAt.setText("0:00");
+                p7TimeAt.setText(res.getStringArray(thisSchedule)[12]);
             } catch (Exception e) {
                 // SCREAM!!!!
             }

@@ -2,6 +2,15 @@
 
     <ListPreference
         android:defaultValue="-1"
+        android:entries="@array/scheduleLabels"
+        android:entryValues="@array/scheduleValues"
+        android:key="daySchedule"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/daySchedule"/>
+
+    <ListPreference
+        android:defaultValue="-1"
         android:entries="@array/classLabels"
         android:entryValues="@array/classValues"
         android:key="p1Class"

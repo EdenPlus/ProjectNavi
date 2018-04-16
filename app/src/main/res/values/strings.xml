@@ -47,6 +47,8 @@
     <!-- Schedule Settings -->
     <string name="pref_header_schedule">Schedule</string>
 
+    <string name="daySchedule">Today\'s Schedule</string>
+
     <!-- Periods -->
     <string name="per1">Period 1</string>
     <string name="per2">Period 2</string>
@@ -58,6 +60,8 @@
 
     <!-- Classes -->
     <string name="courseError">Course Error</string>
+
+    <!-- Course Selection -->
     <array name="classLabels">
         <!-- Format is: {Course} | {Teacher} -->
         <item>None</item>
@@ -65,7 +69,6 @@
         <item>GlobalIT | Benrud</item>
         <item>Tech Discovery | Benrud</item>
     </array>
-
     <array name="classValues">
         <item>c0</item>
         <item>c1</item>
@@ -73,6 +76,7 @@
         <item>c3</item>
     </array>
 
+    <!-- Courses -->
     <array name="c0">
         <item>None</item> <!-- Room Number -->
         <item>None</item> <!-- Course -->
@@ -92,6 +96,104 @@
         <item>Room 545</item> <!-- Room Number -->
         <item>Tech Discovery</item> <!-- Course -->
         <item>Mr. Benrud</item> <!-- Teacher -->
+    </array>
+
+    <!-- Schedule Selection -->
+    <array name="scheduleLabels">
+        <item>Regular</item>
+        <item>Collab</item>
+        <item>Minimum</item>
+    </array>
+    <array name="scheduleValues">
+        <item>regular_day</item>
+        <item>collab_day</item>
+        <item>minimum_day</item>
+    </array>
+    
+    <!-- Schedules -->
+    <array name="regular_day">
+        <item>7:15 AM</item> <!-- Period 1 start -->
+        <item>8:08 AM</item> <!-- Period 1 end -->
+
+        <item>8:15 AM</item> <!-- Period 2 start -->
+        <item>9:08 AM</item> <!-- Period 2 end -->
+
+        <item>9:23 AM</item> <!-- Period 3 start -->
+        <item>10:16 AM</item> <!-- Period 3 end -->
+
+        <item>10:23 AM</item> <!-- Period 4 start -->
+        <item>11:18 AM</item> <!-- Period 4 end -->
+
+        <item>11:55 AM</item> <!-- Period 5 start -->
+        <item>12:48 PM</item> <!-- Period 5 end -->
+
+        <item>12:55 PM</item> <!-- Period 6 start -->
+        <item>1:48 PM</item> <!-- Period 6 end -->
+
+        <item>1:55 PM</item> <!-- Period 7 start -->
+        <item>2:48 PM</item> <!-- Period 7 end -->
+
+        <item>9:08 AM</item> <!-- Break start -->
+        <item>9:16 AM</item> <!-- Break end -->
+
+        <item>11:18 AM</item> <!-- Lunch start -->
+        <item>11:48 AM</item> <!-- Lunch end -->
+    </array>
+    <array name="collab_day">
+        <item>8:36 AM</item> <!-- Period 1 start -->
+        <item>9:16 AM</item> <!-- Period 1 end -->
+
+        <item>9:23 AM</item> <!-- Period 2 start -->
+        <item>10:03 AM</item> <!-- Period 2 end -->
+
+        <item>10:18 AM</item> <!-- Period 3 start -->
+        <item>10:58 AM</item> <!-- Period 3 end -->
+
+        <item>11:05 AM</item> <!-- Period 4 start -->
+        <item>11:47 AM</item> <!-- Period 4 end -->
+
+        <item>12:24 AM</item> <!-- Period 5 start -->
+        <item>1:04 PM</item> <!-- Period 5 end -->
+
+        <item>1:11 PM</item> <!-- Period 6 start -->
+        <item>1:51 PM</item> <!-- Period 6 end -->
+
+        <item>1:58 PM</item> <!-- Period 7 start -->
+        <item>2:38 PM</item> <!-- Period 7 end -->
+
+        <item>10:03 AM</item> <!-- Break start -->
+        <item>10:11 AM</item> <!-- Break end -->
+
+        <item>11:47 AM</item> <!-- Lunch start -->
+        <item>12:17 AM</item> <!-- Lunch end -->
+    </array>
+    <array name="minimum_day">
+        <item>7:34 AM</item> <!-- Period 1 start -->
+        <item>8:08 AM</item> <!-- Period 1 end -->
+
+        <item>8:15 AM</item> <!-- Period 2 start -->
+        <item>8:49 AM</item> <!-- Period 2 end -->
+
+        <item>8:56 AM</item> <!-- Period 3 start -->
+        <item>9:30 AM</item> <!-- Period 3 end -->
+
+        <item>9:37 AM</item> <!-- Period 4 start -->
+        <item>10:13 AM</item> <!-- Period 4 end -->
+
+        <item>10:29 AM</item> <!-- Period 5 start -->
+        <item>11:03 PM</item> <!-- Period 5 end -->
+
+        <item>11:10 PM</item> <!-- Period 6 start -->
+        <item>11:44 PM</item> <!-- Period 6 end -->
+
+        <item>11:51 PM</item> <!-- Period 7 start -->
+        <item>12:25 PM</item> <!-- Period 7 end -->
+
+        <item>10:13 AM</item> <!-- Break start -->
+        <item>10:22 AM</item> <!-- Break end -->
+
+        <item>N/A</item> <!-- Lunch start -->
+        <item>N/A</item> <!-- Lunch end -->
     </array>
     <!-- Schedule Settings -->
 

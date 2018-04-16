@@ -226,6 +226,8 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             bindPreferenceSummaryToValue(findPreference("p5Class"));
             bindPreferenceSummaryToValue(findPreference("p6Class"));
             bindPreferenceSummaryToValue(findPreference("p7Class"));
+
+            bindPreferenceSummaryToValue(findPreference("daySchedule"));
         }
 
         @Override
