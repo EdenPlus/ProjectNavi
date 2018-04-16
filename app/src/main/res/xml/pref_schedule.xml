@@ -4,9 +4,63 @@
         android:defaultValue="-1"
         android:entries="@array/classLabels"
         android:entryValues="@array/classValues"
-        android:key="per1Class"
+        android:key="p1Class"
         android:negativeButtonText="@null"
         android:positiveButtonText="@null"
         android:title="@string/per1"/>
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/classLabels"
+        android:entryValues="@array/classValues"
+        android:key="p2Class"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/per2"/>
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/classLabels"
+        android:entryValues="@array/classValues"
+        android:key="p3Class"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/per3"/>
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/classLabels"
+        android:entryValues="@array/classValues"
+        android:key="p4Class"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/per4"/>
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/classLabels"
+        android:entryValues="@array/classValues"
+        android:key="p5Class"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/per5"/>
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/classLabels"
+        android:entryValues="@array/classValues"
+        android:key="p6Class"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/per6"/>
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/classLabels"
+        android:entryValues="@array/classValues"
+        android:key="p7Class"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/per7"/>
 
 </PreferenceScreen>

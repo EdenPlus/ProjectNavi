@@ -57,37 +57,41 @@
     <string name="per7">Period 7</string>
 
     <!-- Classes -->
+    <string name="courseError">Course Error</string>
     <array name="classLabels">
+        <!-- Format is: {Course} | {Teacher} -->
         <item>None</item>
-        <item>Course 1</item>
-        <item>Course 2</item>
-        <item>Course 3</item>
+        <item>Web Design | Benrud</item>
+        <item>GlobalIT | Benrud</item>
+        <item>Tech Discovery | Benrud</item>
     </array>
+    
     <array name="classValues">
         <item>c0</item>
         <item>c1</item>
         <item>c2</item>
         <item>c3</item>
     </array>
+
     <array name="c0">
-        <item>None</item>
-        <item>None</item>
-        <item>None</item>
+        <item>None</item> <!-- Room Number -->
+        <item>None</item> <!-- Course -->
+        <item>None</item> <!-- Teacher -->
     </array>
     <array name="c1">
-        <item>Room 1</item>
-        <item>Course 1</item>
-        <item>Teacher 1</item>
+        <item>Room 545</item> <!-- Room Number -->
+        <item>Web Design</item> <!-- Course -->
+        <item>Mr. Benrud</item> <!-- Teacher -->
     </array>
     <array name="c2">
-        <item>Room 2</item>
-        <item>Course 2</item>
-        <item>Teacher 2</item>
+        <item>Room 545</item> <!-- Room Number -->
+        <item>GlobalIT</item> <!-- Course -->
+        <item>Mr. Benrud</item> <!-- Teacher -->
     </array>
     <array name="c3">
-        <item>Room 3</item>
-        <item>Course 3</item>
-        <item>Teacher 3</item>
+        <item>Room 545</item> <!-- Room Number -->
+        <item>Tech Discovery</item> <!-- Course -->
+        <item>Mr. Benrud</item> <!-- Teacher -->
     </array>
     <!-- Schedule Settings -->
 
