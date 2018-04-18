@@ -11,6 +11,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.lang.reflect.Field;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 import static android.preference.PreferenceManager.getDefaultSharedPreferences;
 
@@ -31,14 +34,17 @@ public class TabSchedule extends Fragment {
             String daySchedule = prefs.getString("daySchedule", "regular_day");
             int thisSchedule = getId(daySchedule, R.array.class);
 
+            SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss aa");
+            Date systemDate = Calendar.getInstance().getTime();
+            String myDate = sdf.format(systemDate);
+
             // Period 1
             String p1Class = prefs.getString("p1Class", "c0");
 
             TextView p1Room = (TextView) inf.findViewById(R.id.p1Room);
             TextView p1Course = (TextView) inf.findViewById(R.id.p1Course);
             TextView p1Teacher = (TextView) inf.findViewById(R.id.p1Teacher);
-            TextView p1TimeTill = (TextView) inf.findViewById(R.id.p1TimeTill);
-            TextView p1TimeAt = (TextView) inf.findViewById(R.id.p1TimeAt);
+            TextView p1Time = (TextView) inf.findViewById(R.id.p1Time);
 
             try {
                 int p1ResID = getId(p1Class, R.array.class);
@@ -46,8 +52,42 @@ public class TabSchedule extends Fragment {
                 p1Room.setText(res.getStringArray(p1ResID)[0]);
                 p1Course.setText(res.getStringArray(p1ResID)[1]);
                 p1Teacher.setText(res.getStringArray(p1ResID)[2]);
-                p1TimeTill.setText("0:00");
-                p1TimeAt.setText(res.getStringArray(thisSchedule)[0]);
+
+                Date curTime = sdf.parse(myDate);
+                Date timeAt = sdf.parse(res.getStringArray(thisSchedule)[0]);
+                Date timeEnd = sdf.parse(res.getStringArray(thisSchedule)[1]);
+                if (curTime.getTime() >= timeAt.getTime()) {
+                    if (curTime.getTime() >= timeEnd.getTime()) {
+                        long millse = curTime.getTime() - timeEnd.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p1Time.setText("Ended at: " + res.getStringArray(thisSchedule)[1] + " (-" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                    else {
+                        long millse = timeEnd.getTime() - curTime.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p1Time.setText("Ends at: " + res.getStringArray(thisSchedule)[1] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                }
+                else {
+                    long millse = timeAt.getTime() - curTime.getTime();
+                    long mills = Math.abs(millse);
+
+                    int Hours = (int) (mills/(1000 * 60 * 60));
+                    int Mins = (int) (mills/(1000*60)) % 60;
+                    long Secs = (int) (mills / 1000) % 60;
+
+                    p1Time.setText("Starts at: " + res.getStringArray(thisSchedule)[0] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                }
             } catch (Exception e) {
                 // SCREAM!!!!
             }
@@ -58,8 +98,7 @@ public class TabSchedule extends Fragment {
             TextView p2Room = (TextView) inf.findViewById(R.id.p2Room);
             TextView p2Course = (TextView) inf.findViewById(R.id.p2Course);
             TextView p2Teacher = (TextView) inf.findViewById(R.id.p2Teacher);
-            TextView p2TimeTill = (TextView) inf.findViewById(R.id.p2TimeTill);
-            TextView p2TimeAt = (TextView) inf.findViewById(R.id.p2TimeAt);
+            TextView p2Time = (TextView) inf.findViewById(R.id.p2Time);
 
             try {
                 int p2ResID = getId(p2Class, R.array.class);
@@ -67,8 +106,42 @@ public class TabSchedule extends Fragment {
                 p2Room.setText(res.getStringArray(p2ResID)[0]);
                 p2Course.setText(res.getStringArray(p2ResID)[1]);
                 p2Teacher.setText(res.getStringArray(p2ResID)[2]);
-                p2TimeTill.setText("0:00");
-                p2TimeAt.setText(res.getStringArray(thisSchedule)[2]);
+
+                Date curTime = sdf.parse(myDate);
+                Date timeAt = sdf.parse(res.getStringArray(thisSchedule)[2]);
+                Date timeEnd = sdf.parse(res.getStringArray(thisSchedule)[3]);
+                if (curTime.getTime() >= timeAt.getTime()) {
+                    if (curTime.getTime() >= timeEnd.getTime()) {
+                        long millse = curTime.getTime() - timeEnd.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p2Time.setText("Ended at: " + res.getStringArray(thisSchedule)[3] + " (-" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                    else {
+                        long millse = timeEnd.getTime() - curTime.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p2Time.setText("Ends at: " + res.getStringArray(thisSchedule)[3] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                }
+                else {
+                    long millse = timeAt.getTime() - curTime.getTime();
+                    long mills = Math.abs(millse);
+
+                    int Hours = (int) (mills/(1000 * 60 * 60));
+                    int Mins = (int) (mills/(1000*60)) % 60;
+                    long Secs = (int) (mills / 1000) % 60;
+
+                    p2Time.setText("Starts at: " + res.getStringArray(thisSchedule)[2] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                }
             } catch (Exception e) {
                 // SCREAM!!!!
             }
@@ -79,8 +152,7 @@ public class TabSchedule extends Fragment {
             TextView p3Room = (TextView) inf.findViewById(R.id.p3Room);
             TextView p3Course = (TextView) inf.findViewById(R.id.p3Course);
             TextView p3Teacher = (TextView) inf.findViewById(R.id.p3Teacher);
-            TextView p3TimeTill = (TextView) inf.findViewById(R.id.p3TimeTill);
-            TextView p3TimeAt = (TextView) inf.findViewById(R.id.p3TimeAt);
+            TextView p3Time = (TextView) inf.findViewById(R.id.p3Time);
 
             try {
                 int p3ResID = getId(p3Class, R.array.class);
@@ -88,8 +160,42 @@ public class TabSchedule extends Fragment {
                 p3Room.setText(res.getStringArray(p3ResID)[0]);
                 p3Course.setText(res.getStringArray(p3ResID)[1]);
                 p3Teacher.setText(res.getStringArray(p3ResID)[2]);
-                p3TimeTill.setText("0:00");
-                p3TimeAt.setText(res.getStringArray(thisSchedule)[4]);
+
+                Date curTime = sdf.parse(myDate);
+                Date timeAt = sdf.parse(res.getStringArray(thisSchedule)[4]);
+                Date timeEnd = sdf.parse(res.getStringArray(thisSchedule)[5]);
+                if (curTime.getTime() >= timeAt.getTime()) {
+                    if (curTime.getTime() >= timeEnd.getTime()) {
+                        long millse = curTime.getTime() - timeEnd.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p3Time.setText("Ended at: " + res.getStringArray(thisSchedule)[5] + " (-" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                    else {
+                        long millse = timeEnd.getTime() - curTime.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p3Time.setText("Ends at: " + res.getStringArray(thisSchedule)[5] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                }
+                else {
+                    long millse = timeAt.getTime() - curTime.getTime();
+                    long mills = Math.abs(millse);
+
+                    int Hours = (int) (mills/(1000 * 60 * 60));
+                    int Mins = (int) (mills/(1000*60)) % 60;
+                    long Secs = (int) (mills / 1000) % 60;
+
+                    p3Time.setText("Starts at: " + res.getStringArray(thisSchedule)[4] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                }
             } catch (Exception e) {
                 // SCREAM!!!!
             }
@@ -100,8 +206,7 @@ public class TabSchedule extends Fragment {
             TextView p4Room = (TextView) inf.findViewById(R.id.p4Room);
             TextView p4Course = (TextView) inf.findViewById(R.id.p4Course);
             TextView p4Teacher = (TextView) inf.findViewById(R.id.p4Teacher);
-            TextView p4TimeTill = (TextView) inf.findViewById(R.id.p4TimeTill);
-            TextView p4TimeAt = (TextView) inf.findViewById(R.id.p4TimeAt);
+            TextView p4Time = (TextView) inf.findViewById(R.id.p4Time);
 
             try {
                 int p4ResID = getId(p4Class, R.array.class);
@@ -109,8 +214,42 @@ public class TabSchedule extends Fragment {
                 p4Room.setText(res.getStringArray(p4ResID)[0]);
                 p4Course.setText(res.getStringArray(p4ResID)[1]);
                 p4Teacher.setText(res.getStringArray(p4ResID)[2]);
-                p4TimeTill.setText("0:00");
-                p4TimeAt.setText(res.getStringArray(thisSchedule)[6]);
+
+                Date curTime = sdf.parse(myDate);
+                Date timeAt = sdf.parse(res.getStringArray(thisSchedule)[6]);
+                Date timeEnd = sdf.parse(res.getStringArray(thisSchedule)[7]);
+                if (curTime.getTime() >= timeAt.getTime()) {
+                    if (curTime.getTime() >= timeEnd.getTime()) {
+                        long millse = curTime.getTime() - timeEnd.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p4Time.setText("Ended at: " + res.getStringArray(thisSchedule)[7] + " (-" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                    else {
+                        long millse = timeEnd.getTime() - curTime.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p4Time.setText("Ends at: " + res.getStringArray(thisSchedule)[7] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                }
+                else {
+                    long millse = timeAt.getTime() - curTime.getTime();
+                    long mills = Math.abs(millse);
+
+                    int Hours = (int) (mills/(1000 * 60 * 60));
+                    int Mins = (int) (mills/(1000*60)) % 60;
+                    long Secs = (int) (mills / 1000) % 60;
+
+                    p4Time.setText("Starts at: " + res.getStringArray(thisSchedule)[6] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                }
             } catch (Exception e) {
                 // SCREAM!!!!
             }
@@ -121,8 +260,7 @@ public class TabSchedule extends Fragment {
             TextView p5Room = (TextView) inf.findViewById(R.id.p5Room);
             TextView p5Course = (TextView) inf.findViewById(R.id.p5Course);
             TextView p5Teacher = (TextView) inf.findViewById(R.id.p5Teacher);
-            TextView p5TimeTill = (TextView) inf.findViewById(R.id.p5TimeTill);
-            TextView p5TimeAt = (TextView) inf.findViewById(R.id.p5TimeAt);
+            TextView p5Time = (TextView) inf.findViewById(R.id.p5Time);
 
             try {
                 int p5ResID = getId(p5Class, R.array.class);
@@ -130,8 +268,42 @@ public class TabSchedule extends Fragment {
                 p5Room.setText(res.getStringArray(p5ResID)[0]);
                 p5Course.setText(res.getStringArray(p5ResID)[1]);
                 p5Teacher.setText(res.getStringArray(p5ResID)[2]);
-                p5TimeTill.setText("0:00");
-                p5TimeAt.setText(res.getStringArray(thisSchedule)[8]);
+
+                Date curTime = sdf.parse(myDate);
+                Date timeAt = sdf.parse(res.getStringArray(thisSchedule)[8]);
+                Date timeEnd = sdf.parse(res.getStringArray(thisSchedule)[9]);
+                if (curTime.getTime() >= timeAt.getTime()) {
+                    if (curTime.getTime() >= timeEnd.getTime()) {
+                        long millse = curTime.getTime() - timeEnd.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p5Time.setText("Ended at: " + res.getStringArray(thisSchedule)[9] + " (-" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                    else {
+                        long millse = timeEnd.getTime() - curTime.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p5Time.setText("Ends at: " + res.getStringArray(thisSchedule)[9] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                }
+                else {
+                    long millse = timeAt.getTime() - curTime.getTime();
+                    long mills = Math.abs(millse);
+
+                    int Hours = (int) (mills/(1000 * 60 * 60));
+                    int Mins = (int) (mills/(1000*60)) % 60;
+                    long Secs = (int) (mills / 1000) % 60;
+
+                    p5Time.setText("Starts at: " + res.getStringArray(thisSchedule)[8] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                }
             } catch (Exception e) {
                 // SCREAM!!!!
             }
@@ -142,8 +314,7 @@ public class TabSchedule extends Fragment {
             TextView p6Room = (TextView) inf.findViewById(R.id.p6Room);
             TextView p6Course = (TextView) inf.findViewById(R.id.p6Course);
             TextView p6Teacher = (TextView) inf.findViewById(R.id.p6Teacher);
-            TextView p6TimeTill = (TextView) inf.findViewById(R.id.p6TimeTill);
-            TextView p6TimeAt = (TextView) inf.findViewById(R.id.p6TimeAt);
+            TextView p6Time = (TextView) inf.findViewById(R.id.p6Time);
 
             try {
                 int p6ResID = getId(p6Class, R.array.class);
@@ -151,8 +322,42 @@ public class TabSchedule extends Fragment {
                 p6Room.setText(res.getStringArray(p6ResID)[0]);
                 p6Course.setText(res.getStringArray(p6ResID)[1]);
                 p6Teacher.setText(res.getStringArray(p6ResID)[2]);
-                p6TimeTill.setText("0:00");
-                p6TimeAt.setText(res.getStringArray(thisSchedule)[10]);
+
+                Date curTime = sdf.parse(myDate);
+                Date timeAt = sdf.parse(res.getStringArray(thisSchedule)[10]);
+                Date timeEnd = sdf.parse(res.getStringArray(thisSchedule)[11]);
+                if (curTime.getTime() >= timeAt.getTime()) {
+                    if (curTime.getTime() >= timeEnd.getTime()) {
+                        long millse = curTime.getTime() - timeEnd.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p6Time.setText("Ended at: " + res.getStringArray(thisSchedule)[11] + " (-" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                    else {
+                        long millse = timeEnd.getTime() - curTime.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p6Time.setText("Ends at: " + res.getStringArray(thisSchedule)[11] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                }
+                else {
+                    long millse = timeAt.getTime() - curTime.getTime();
+                    long mills = Math.abs(millse);
+
+                    int Hours = (int) (mills/(1000 * 60 * 60));
+                    int Mins = (int) (mills/(1000*60)) % 60;
+                    long Secs = (int) (mills / 1000) % 60;
+
+                    p6Time.setText("Starts at: " + res.getStringArray(thisSchedule)[10] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                }
             } catch (Exception e) {
                 // SCREAM!!!!
             }
@@ -163,8 +368,7 @@ public class TabSchedule extends Fragment {
             TextView p7Room = (TextView) inf.findViewById(R.id.p7Room);
             TextView p7Course = (TextView) inf.findViewById(R.id.p7Course);
             TextView p7Teacher = (TextView) inf.findViewById(R.id.p7Teacher);
-            TextView p7TimeTill = (TextView) inf.findViewById(R.id.p7TimeTill);
-            TextView p7TimeAt = (TextView) inf.findViewById(R.id.p7TimeAt);
+            TextView p7Time = (TextView) inf.findViewById(R.id.p7Time);
 
             try {
                 int p7ResID = getId(p7Class, R.array.class);
@@ -172,8 +376,42 @@ public class TabSchedule extends Fragment {
                 p7Room.setText(res.getStringArray(p7ResID)[0]);
                 p7Course.setText(res.getStringArray(p7ResID)[1]);
                 p7Teacher.setText(res.getStringArray(p7ResID)[2]);
-                p7TimeTill.setText("0:00");
-                p7TimeAt.setText(res.getStringArray(thisSchedule)[12]);
+
+                Date curTime = sdf.parse(myDate);
+                Date timeAt = sdf.parse(res.getStringArray(thisSchedule)[12]);
+                Date timeEnd = sdf.parse(res.getStringArray(thisSchedule)[13]);
+                if (curTime.getTime() >= timeAt.getTime()) {
+                    if (curTime.getTime() >= timeEnd.getTime()) {
+                        long millse = curTime.getTime() - timeEnd.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p7Time.setText("Ended at: " + res.getStringArray(thisSchedule)[13] + " (-" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                    else {
+                        long millse = timeEnd.getTime() - curTime.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        p7Time.setText("Ends at: " + res.getStringArray(thisSchedule)[13] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                }
+                else {
+                    long millse = timeAt.getTime() - curTime.getTime();
+                    long mills = Math.abs(millse);
+
+                    int Hours = (int) (mills/(1000 * 60 * 60));
+                    int Mins = (int) (mills/(1000*60)) % 60;
+                    long Secs = (int) (mills / 1000) % 60;
+
+                    p7Time.setText("Starts at: " + res.getStringArray(thisSchedule)[12] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                }
             } catch (Exception e) {
                 // SCREAM!!!!
             }

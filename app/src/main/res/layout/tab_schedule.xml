@@ -64,19 +64,10 @@
                 android:text="Room" />
 
             <TextView
-                android:id="@+id/p1TimeTill"
+                android:id="@+id/p1Time"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="@dimen/schedule_item_size"
-                android:text="Time Till" />
-
-            <TextView
-                android:id="@+id/p1TimeAt"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:gravity="center"
                 android:textSize="@dimen/schedule_item_size"
                 android:text="Time At" />
@@ -142,19 +133,10 @@
                 android:text="Room" />
 
             <TextView
-                android:id="@+id/p2TimeTill"
+                android:id="@+id/p2Time"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="@dimen/schedule_item_size"
-                android:text="Time Till" />
-
-            <TextView
-                android:id="@+id/p2TimeAt"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:gravity="center"
                 android:textSize="@dimen/schedule_item_size"
                 android:text="Time At" />
@@ -220,19 +202,10 @@
                 android:text="Room" />
 
             <TextView
-                android:id="@+id/p3TimeTill"
+                android:id="@+id/p3Time"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="@dimen/schedule_item_size"
-                android:text="Time Till" />
-
-            <TextView
-                android:id="@+id/p3TimeAt"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:gravity="center"
                 android:textSize="@dimen/schedule_item_size"
                 android:text="Time At" />
@@ -298,19 +271,10 @@
                 android:text="Room" />
 
             <TextView
-                android:id="@+id/p4TimeTill"
+                android:id="@+id/p4Time"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="@dimen/schedule_item_size"
-                android:text="Time Till" />
-
-            <TextView
-                android:id="@+id/p4TimeAt"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:gravity="center"
                 android:textSize="@dimen/schedule_item_size"
                 android:text="Time At" />
@@ -376,19 +340,10 @@
                 android:text="Room" />
 
             <TextView
-                android:id="@+id/p5TimeTill"
+                android:id="@+id/p5Time"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="@dimen/schedule_item_size"
-                android:text="Time Till" />
-
-            <TextView
-                android:id="@+id/p5TimeAt"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:gravity="center"
                 android:textSize="@dimen/schedule_item_size"
                 android:text="Time At" />
@@ -454,19 +409,10 @@
                 android:text="Room" />
 
             <TextView
-                android:id="@+id/p6TimeTill"
+                android:id="@+id/p6Time"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="@dimen/schedule_item_size"
-                android:text="Time Till" />
-
-            <TextView
-                android:id="@+id/p6TimeAt"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:gravity="center"
                 android:textSize="@dimen/schedule_item_size"
                 android:text="Time At" />
@@ -532,19 +478,10 @@
                 android:text="Room" />
 
             <TextView
-                android:id="@+id/p7TimeTill"
+                android:id="@+id/p7Time"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="@dimen/schedule_item_size"
-                android:text="Time Till" />
-
-            <TextView
-                android:id="@+id/p7TimeAt"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:gravity="center"
                 android:textSize="@dimen/schedule_item_size"
                 android:text="Time At" />
