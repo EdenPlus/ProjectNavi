@@ -77,26 +77,26 @@
     </array>
 
     <!-- Courses -->
-    <array name="c0">
+    <string-array name="c0">
         <item>None</item> <!-- Room Number -->
         <item>None</item> <!-- Course -->
         <item>None</item> <!-- Teacher -->
-    </array>
-    <array name="c1">
-        <item>Room: 545</item> <!-- Room Number -->
+    </string-array>
+    <string-array name="c1">
+        <item>545</item> <!-- Room Number -->
         <item>Web Design</item> <!-- Course -->
         <item>Mr. Benrud</item> <!-- Teacher -->
-    </array>
-    <array name="c2">
-        <item>Room: 545</item> <!-- Room Number -->
-        <item>GlobalIT</item> <!-- Course -->
+    </string-array>
+    <string-array name="c2">
+        <item>545</item> <!-- Room Number -->
+        <item>Global IT</item> <!-- Course -->
         <item>Mr. Benrud</item> <!-- Teacher -->
-    </array>
-    <array name="c3">
-        <item>Room: 545</item> <!-- Room Number -->
+    </string-array>
+    <string-array name="c3">
+        <item>545</item> <!-- Room Number -->
         <item>Tech Discovery</item> <!-- Course -->
         <item>Mr. Benrud</item> <!-- Teacher -->
-    </array>
+    </string-array>
 
     <!-- Schedule Selection -->
     <array name="scheduleLabels">
