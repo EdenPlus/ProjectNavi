@@ -75,10 +75,18 @@
 
     </RelativeLayout>
 
+    <View
+        android:id="@+id/divider1"
+        android:layout_below="@id/p1Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#000000"
+        />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/p1Layout"
+        android:layout_below="@id/divider1"
         android:id="@+id/p2Layout">
 
         <TextView
@@ -144,10 +152,18 @@
 
     </RelativeLayout>
 
+    <View
+        android:id="@+id/divider2"
+        android:layout_below="@id/p2Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#000000"
+        />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/p2Layout"
+        android:layout_below="@id/divider2"
         android:id="@+id/p3Layout">
 
         <TextView
@@ -213,10 +229,18 @@
 
     </RelativeLayout>
 
+    <View
+        android:id="@+id/divider3"
+        android:layout_below="@id/p3Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#000000"
+        />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/p3Layout"
+        android:layout_below="@id/divider3"
         android:id="@+id/p4Layout">
 
         <TextView
@@ -282,10 +306,18 @@
 
     </RelativeLayout>
 
+    <View
+        android:id="@+id/divider4"
+        android:layout_below="@id/p4Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#000000"
+        />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/p4Layout"
+        android:layout_below="@id/divider4"
         android:id="@+id/p5Layout">
 
         <TextView
@@ -351,10 +383,18 @@
 
     </RelativeLayout>
 
+    <View
+        android:id="@+id/divider5"
+        android:layout_below="@id/p5Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#000000"
+        />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/p5Layout"
+        android:layout_below="@id/divider5"
         android:id="@+id/p6Layout">
 
         <TextView
@@ -420,10 +460,18 @@
 
     </RelativeLayout>
 
+    <View
+        android:id="@+id/divider6"
+        android:layout_below="@id/p6Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#000000"
+        />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/p6Layout"
+        android:layout_below="@id/divider6"
         android:id="@+id/p7Layout">
 
         <TextView
@@ -488,4 +536,13 @@
         </LinearLayout>
 
     </RelativeLayout>
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_below="@id/p7Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#000000"
+        />
+
 </RelativeLayout>
