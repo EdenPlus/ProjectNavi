@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/justenlosoya/.android/build-cache/df3301a455672aa1217288e41b233dec54c4210f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="/Users/justenlosoya/Desktop/ProjectNavi/app/build/intermediates/pre-dexed/debug/classes_8d165913d16a3e5d2a82ed92d0b93d2d4533b0b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justenlosoya/.android/build-cache/7d55ec8551e8d59c6f72995d727619023f0bbfa9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="/Users/justenlosoya/Desktop/ProjectNavi/app/build/intermediates/pre-dexed/debug/classes_5129ca1581ae34d365ce7eb772bbcf29d87bc567.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justenlosoya/.android/build-cache/b9d8d6ac3bb701af3d4708acd5309da3ec745ee2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="/Users/justenlosoya/Desktop/ProjectNavi/app/build/intermediates/pre-dexed/debug/classes_420a4050d1509db2d270818d34e1a0d8bbd0a48c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justenlosoya/.android/build-cache/60619503b784600335e3be5016e9bed600de2b76/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="060a7157438a0b1b0706b99c430fb3ecbc5a79a4">
+        <dex dex="/Users/justenlosoya/Desktop/ProjectNavi/app/build/intermediates/pre-dexed/debug/classes_53ae31f754331afc55b9899bdc7f478aaad4b7cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justenlosoya/.android/build-cache/e71c48533df35ac7e70bc75c0c3cee88182e1de7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="829c6e46cb221c2102801221c648b77113743e81">
+        <dex dex="/Users/justenlosoya/Desktop/ProjectNavi/app/build/intermediates/pre-dexed/debug/classes_f6a4ac096ec6282071bd4584a23b28595d306daf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/justenlosoya/.android/build-cache/5e85f33bac3d64a01e46c74dc110e0760dac074e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="/Users/justenlosoya/Desktop/ProjectNavi/app/build/intermediates/pre-dexed/debug/classes_110dc40b829b1c2ba9382eff65d6073a128734c7.jar" />
+    </item>
+
+</items>

@@ -24,7 +24,7 @@ public class TabCalendar extends Fragment {
         inf = inflater.inflate(R.layout.tab_calendar, container, false);
         // Start Layout Preference Changes
         try {
-            
+
         } catch (NullPointerException e) {
             // Ugh
         }
