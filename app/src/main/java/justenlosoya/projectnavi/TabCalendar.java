@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Random;
 
 /**
@@ -22,10 +24,7 @@ public class TabCalendar extends Fragment {
         inf = inflater.inflate(R.layout.tab_calendar, container, false);
         // Start Layout Preference Changes
         try {
-            TextView t = (TextView) inf.findViewById(R.id.textViewC);
-            Random r = new Random();
-            int i1 = r.nextInt(100);
-            t.setText("Randomly generated number when the fragment is loaded: " + i1);
+            
         } catch (NullPointerException e) {
             // Ugh
         }

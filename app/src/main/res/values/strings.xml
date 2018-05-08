@@ -103,11 +103,15 @@
         <item>Regular</item>
         <item>Collab</item>
         <item>Minimum</item>
+        <item>Pride Friday</item>
+        <item>Day Off</item>
     </array>
     <array name="scheduleValues">
         <item>regular_day</item>
         <item>collab_day</item>
         <item>minimum_day</item>
+        <item>pride_day</item>
+        <item>day_off</item>
     </array>
 
     <!-- Schedules -->
@@ -191,6 +195,62 @@
 
         <item>10:13:00 AM</item> <!-- Break start -->
         <item>10:22:00 AM</item> <!-- Break end -->
+
+        <item>N/A</item> <!-- Lunch start -->
+        <item>N/A</item> <!-- Lunch end -->
+    </array>
+    <array name="pride_day">
+        <item>7:18:00 AM</item> <!-- Period 1 start -->
+        <item>8:08:00 AM</item> <!-- Period 1 end -->
+
+        <item>8:15:00 AM</item> <!-- Period 2 start -->
+        <item>9:05:00 AM</item> <!-- Period 2 end -->
+
+        <item>9:40:00 AM</item> <!-- Period 3 start -->
+        <item>10:30:00 AM</item> <!-- Period 3 end -->
+
+        <item>10:37:00 AM</item> <!-- Period 4 start -->
+        <item>11:27:00 AM</item> <!-- Period 4 end -->
+
+        <item>12:04:00 PM</item> <!-- Period 5 start -->
+        <item>12:54:00 PM</item> <!-- Period 5 end -->
+
+        <item>1:01:00 PM</item> <!-- Period 6 start -->
+        <item>1:51:00 PM</item> <!-- Period 6 end -->
+
+        <item>1:58:00 PM</item> <!-- Period 7 start -->
+        <item>2:48:00 PM</item> <!-- Period 7 end -->
+
+        <item>9:25:00 AM</item> <!-- Break start -->
+        <item>9:33:00 AM</item> <!-- Break end -->
+
+        <item>11:27:00 AM</item> <!-- Lunch start -->
+        <item>11:57:00 AM</item> <!-- Lunch end -->
+    </array>
+    <array name="day_off">
+        <item>N/A</item> <!-- Period 1 start -->
+        <item>N/A</item> <!-- Period 1 end -->
+
+        <item>N/A</item> <!-- Period 2 start -->
+        <item>N/A</item> <!-- Period 2 end -->
+
+        <item>N/A</item> <!-- Period 3 start -->
+        <item>N/A</item> <!-- Period 3 end -->
+
+        <item>N/A</item> <!-- Period 4 start -->
+        <item>N/A</item> <!-- Period 4 end -->
+
+        <item>N/A</item> <!-- Period 5 start -->
+        <item>N/A</item> <!-- Period 5 end -->
+
+        <item>N/A</item> <!-- Period 6 start -->
+        <item>N/A</item> <!-- Period 6 end -->
+
+        <item>N/A</item> <!-- Period 7 start -->
+        <item>N/A</item> <!-- Period 7 end -->
+
+        <item>N/A</item> <!-- Break start -->
+        <item>N/A</item> <!-- Break end -->
 
         <item>N/A</item> <!-- Lunch start -->
         <item>N/A</item> <!-- Lunch end -->

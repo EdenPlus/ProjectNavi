@@ -135,40 +135,45 @@ public class TabSchedule extends Fragment {
             tCourse.setText(/*"Course: " + */res.getStringArray(resID)[1]);
             tTeacher.setText(/*"Teacher: " + */res.getStringArray(resID)[2]);
 
-            Date curTime = sdf.parse(myDate);
-            Date timeAt = sdf.parse(res.getStringArray(schedule)[start]);
-            Date timeEnd = sdf.parse(res.getStringArray(schedule)[end]);
-            if (curTime.getTime() >= timeAt.getTime()) {
-                if (curTime.getTime() >= timeEnd.getTime()) {
-                    long millse = curTime.getTime() - timeEnd.getTime();
-                    long mills = Math.abs(millse);
-
-                    int Hours = (int) (mills/(1000 * 60 * 60));
-                    int Mins = (int) (mills/(1000*60)) % 60;
-                    long Secs = (int) (mills / 1000) % 60;
-
-                    tTime.setText("Ended at: " + res.getStringArray(schedule)[end] + " (-" + Hours + ":" + Mins + ":" + Secs + ")");
-                }
-                else {
-                    long millse = timeEnd.getTime() - curTime.getTime();
-                    long mills = Math.abs(millse);
-
-                    int Hours = (int) (mills/(1000 * 60 * 60));
-                    int Mins = (int) (mills/(1000*60)) % 60;
-                    long Secs = (int) (mills / 1000) % 60;
-
-                    tTime.setText("Ends at: " + res.getStringArray(schedule)[end] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
-                }
+            if (res.getStringArray(schedule)[start].equals("N/A") && res.getStringArray(schedule)[end].equals("N/A")) {
+                tTime.setText("No class today");
             }
             else {
-                long millse = timeAt.getTime() - curTime.getTime();
-                long mills = Math.abs(millse);
+                Date curTime = sdf.parse(myDate);
+                Date timeAt = sdf.parse(res.getStringArray(schedule)[start]);
+                Date timeEnd = sdf.parse(res.getStringArray(schedule)[end]);
+                if (curTime.getTime() >= timeAt.getTime()) {
+                    if (curTime.getTime() >= timeEnd.getTime()) {
+                        long millse = curTime.getTime() - timeEnd.getTime();
+                        long mills = Math.abs(millse);
 
-                int Hours = (int) (mills/(1000 * 60 * 60));
-                int Mins = (int) (mills/(1000*60)) % 60;
-                long Secs = (int) (mills / 1000) % 60;
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
 
-                tTime.setText("Starts at: " + res.getStringArray(schedule)[start] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                        tTime.setText("Ended at: " + res.getStringArray(schedule)[end] + " (-" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                    else {
+                        long millse = timeEnd.getTime() - curTime.getTime();
+                        long mills = Math.abs(millse);
+
+                        int Hours = (int) (mills/(1000 * 60 * 60));
+                        int Mins = (int) (mills/(1000*60)) % 60;
+                        long Secs = (int) (mills / 1000) % 60;
+
+                        tTime.setText("Ends at: " + res.getStringArray(schedule)[end] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                    }
+                }
+                else {
+                    long millse = timeAt.getTime() - curTime.getTime();
+                    long mills = Math.abs(millse);
+
+                    int Hours = (int) (mills/(1000 * 60 * 60));
+                    int Mins = (int) (mills/(1000*60)) % 60;
+                    long Secs = (int) (mills / 1000) % 60;
+
+                    tTime.setText("Starts at: " + res.getStringArray(schedule)[start] + " (" + Hours + ":" + Mins + ":" + Secs + ")");
+                }
             }
         } catch (Exception e) {
             // SCREAM!!!!

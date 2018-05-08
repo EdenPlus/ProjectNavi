@@ -25,9 +25,12 @@ import android.widget.TextView;
 import android.content.SharedPreferences;
 import android.content.Context;
 
+import java.util.Calendar;
 import java.util.List;
 
 import justenlosoya.projectnavi.TouchImageView;
+
+import static android.preference.PreferenceManager.getDefaultSharedPreferences;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -67,6 +70,38 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
+
+
+
+        SharedPreferences prefs = getDefaultSharedPreferences(this);
+
+        Calendar calendar = Calendar.getInstance();
+        int day = calendar.get(Calendar.DAY_OF_WEEK);
+        switch (day) {
+            case Calendar.SUNDAY:
+                prefs.edit().putString("daySchedule", "day_off").apply();
+                break;
+            case Calendar.MONDAY:
+                prefs.edit().putString("daySchedule", "regular_day").apply();
+                break;
+            case Calendar.TUESDAY:
+                prefs.edit().putString("daySchedule", "regular_day").apply();
+                break;
+            case Calendar.WEDNESDAY:
+                prefs.edit().putString("daySchedule", "collab_day").apply();
+                break;
+            case Calendar.THURSDAY:
+                prefs.edit().putString("daySchedule", "regular_day").apply();
+                break;
+            case Calendar.FRIDAY:
+                prefs.edit().putString("daySchedule", "pride_day").apply();
+                break;
+            case Calendar.SATURDAY:
+                prefs.edit().putString("daySchedule", "day_off").apply();
+                break;
+            default:
+                break;
+        }
     }
 
     @Override
