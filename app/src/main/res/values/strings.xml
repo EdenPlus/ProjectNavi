@@ -65,15 +65,201 @@
     <array name="classLabels">
         <!-- Format is: {Course} | {Teacher} -->
         <item>None</item>
-        <item>Web Design | Benrud</item>
-        <item>GlobalIT | Benrud</item>
-        <item>Tech Discovery | Benrud</item>
+        <item>Social Science | Alley</item>
+        <item>Adaptive PE | Adler</item>
+        <item>Learning Center | Bartell</item>
+        <item>Math | Baer</item>
+        <item>English | Bell</item>
+        <item>Tech | Benrud</item>
+        <item>DC | Boeger</item>
+        <item>Social Studies | Bradley</item>
+        <item>LH | Brooks</item>
+        <item>NJROTC | Brosnan</item>
+        <item>English | Carlino</item>
+        <item>Math | Camara</item>
+        <item>Math | Cooke</item>
+        <item>PE | Cooper</item>
+        <item>Science | Cox</item>
+        <item>Biology | Cripps</item>
+        <item>MH Transition | Dixon</item>
+        <item>PE | Earley</item>
+        <item>Drama | Ecker</item>
+        <item>Physics | Eklund</item>
+        <item>LH | Espley</item>
+        <item>English | Fanning</item>
+        <item>Math | Flisher</item>
+        <item>Math | Foggiano</item>
+        <item>Special Ed | Freeland</item>
+        <item>MH | Galvez</item>
+        <item>English | Garrett</item>
+        <item>Social Science | D. Ginn</item>
+        <item>English | L. Ginn</item>
+        <item>Comp Tech | Giovengo</item>
+        <item>PE | Goodrich</item>
+        <item>Biology | Hedberg</item>
+        <item>ASB | Hersch</item>
+        <item>Math | Heubach</item>
+        <item>Math | Hoeben</item>
+        <item>Chemistry | Holcomb</item>
+        <item>Spanish | Jacobs</item>
+        <item>English | Jensen</item>
+        <item>Dance | Jiacoletti</item>
+        <item>Social Science | H. Jones</item>
+        <item>Social Science | S. Jones</item>
+        <item>Spanish | Joyce</item>
+        <item>Photo | Jungman</item>
+        <item>PE | Karlo</item>
+        <item>Child Dev | Kirby</item>
+        <item>Social Science | Knight</item>
+        <item>Science | La Berge</item>
+        <item>NJROTC | Lapp</item>
+        <item>English | Leather</item>
+        <item>Chemistry | Lee</item>
+        <item>Auto | Lehr</item>
+        <item>Social Science | Long</item>
+        <item>Math | LoPrell</item>
+        <item>Comp Anim | Mafnas</item>
+        <item>French | Mahmoudi</item>
+        <item>Math | McLaughlin</item>
+        <item>English | Miller</item>
+        <item>Choir | Morrison</item>
+        <item>MH | Nager</item>
+        <item>English | Neel</item>
+        <item>Social Science | Neill</item>
+        <item>PE | Odom</item>
+        <item>Sp Ed | Ogilvie</item>
+        <item>English | Ortiz</item>
+        <item>Math | Pagano</item>
+        <item>Art | Pagarigan</item>
+        <item>Spanish | Pantoja</item>
+        <item>Spanish | Park</item>
+        <item>English | Patterson</item>
+        <item>Math | Pennefather</item>
+        <item>Art | Phillips</item>
+        <item>Transition | Potter</item>
+        <item>Chemistry | Price</item>
+        <item>ROP Sports Med. | Ray</item>
+        <item>Geography | Raymond</item>
+        <item>Math | Ridgway</item>
+        <item>MH | Samokhvalof</item>
+        <item>LH | Savage</item>
+        <item>Speech | Schepis</item>
+        <item>Sp Ed | Schreiner</item>
+        <item>English | Schultz</item>
+        <item>Speech | Sigsbee</item>
+        <item>Social Science | Smith</item>
+        <item>Sp Ed | B. Stellin</item>
+        <item>English | E. Stellin</item>
+        <item>Social Science | Steveson</item>
+        <item>AMP-Sp Ed. | Taylor</item>
+        <item>Bus English | Thren</item>
+        <item>Sp Ed | Tiffany</item>
+        <item>Sp Ed | Tipton</item>
+        <item>Sp Ed | Van Houten</item>
+        <item>Spanish | Velarde</item>
+        <item>Math | Vellone</item>
+        <item>Music | Webb</item>
+        <item>Social Science | Williams</item>
+        <item>Science | Youngblood</item>
     </array>
     <array name="classValues">
         <item>c0</item>
         <item>c1</item>
         <item>c2</item>
         <item>c3</item>
+        <item>c4</item>
+        <item>c5</item>
+        <item>c6</item>
+        <item>c7</item>
+        <item>c8</item>
+        <item>c9</item>
+        <item>c10</item>
+        <item>c11</item>
+        <item>c12</item>
+        <item>c13</item>
+        <item>c14</item>
+        <item>c15</item>
+        <item>c16</item>
+        <item>c17</item>
+        <item>c18</item>
+        <item>c19</item>
+        <item>c20</item>
+        <item>c21</item>
+        <item>c22</item>
+        <item>c23</item>
+        <item>c24</item>
+        <item>c25</item>
+        <item>c26</item>
+        <item>c27</item>
+        <item>c28</item>
+        <item>c29</item>
+        <item>c30</item>
+        <item>c31</item>
+        <item>c32</item>
+        <item>c33</item>
+        <item>c34</item>
+        <item>c35</item>
+        <item>c36</item>
+        <item>c37</item>
+        <item>c38</item>
+        <item>c39</item>
+        <item>c40</item>
+        <item>c41</item>
+        <item>c42</item>
+        <item>c43</item>
+        <item>c44</item>
+        <item>c45</item>
+        <item>c46</item>
+        <item>c47</item>
+        <item>c48</item>
+        <item>c49</item>
+        <item>c50</item>
+        <item>c51</item>
+        <item>c52</item>
+        <item>c53</item>
+        <item>c54</item>
+        <item>c55</item>
+        <item>c56</item>
+        <item>c57</item>
+        <item>c68</item>
+        <item>c59</item>
+        <item>c60</item>
+        <item>c61</item>
+        <item>c62</item>
+        <item>c63</item>
+        <item>c64</item>
+        <item>c65</item>
+        <item>c66</item>
+        <item>c67</item>
+        <item>c68</item>
+        <item>c69</item>
+        <item>c70</item>
+        <item>c71</item>
+        <item>c72</item>
+        <item>c73</item>
+        <item>c74</item>
+        <item>c75</item>
+        <item>c76</item>
+        <item>c77</item>
+        <item>c78</item>
+        <item>c79</item>
+        <item>c80</item>
+        <item>c81</item>
+        <item>c82</item>
+        <item>c83</item>
+        <item>c84</item>
+        <item>c85</item>
+        <item>c86</item>
+        <item>c87</item>
+        <item>c88</item>
+        <item>c89</item>
+        <item>c90</item>
+        <item>c91</item>
+        <item>c92</item>
+        <item>c93</item>
+        <item>c94</item>
+        <item>c95</item>
+        <item>c96</item>
     </array>
 
     <!-- Courses -->
@@ -83,19 +269,484 @@
         <item>None</item> <!-- Teacher -->
     </string-array>
     <string-array name="c1">
-        <item>545</item> <!-- Room Number -->
-        <item>Web Design</item> <!-- Course -->
-        <item>Mr. Benrud</item> <!-- Teacher -->
+        <item>855</item> <!-- Room Number -->
+        <item>Social Science</item> <!-- Course -->
+        <item>Alley, Christina</item> <!-- Teacher -->
     </string-array>
     <string-array name="c2">
-        <item>545</item> <!-- Room Number -->
-        <item>Global IT</item> <!-- Course -->
-        <item>Mr. Benrud</item> <!-- Teacher -->
+        <item>1000</item> <!-- Room Number -->
+        <item>Adaptive PE</item> <!-- Course -->
+        <item>Adler, Kim</item> <!-- Teacher -->
     </string-array>
     <string-array name="c3">
+        <item>730</item> <!-- Room Number -->
+        <item>Learning Center</item> <!-- Course -->
+        <item>Bartell, Ross</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c4">
+        <item>Various Rooms</item> <!-- Room Number -->
+        <item>Math</item> <!-- Course -->
+        <item>Baer, Kevin</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c5">
+        <item>1452</item> <!-- Room Number -->
+        <item>English</item> <!-- Course -->
+        <item>Bell, Todd</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c6">
+        <item>540</item> <!-- Room Number -->
+        <item>Tech</item> <!-- Course -->
+        <item>Benrud, Todd</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c7">
+        <item>Library</item> <!-- Room Number -->
+        <item>DC</item> <!-- Course -->
+        <item>Boeger, Jodie</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c8">
+        <item>845</item> <!-- Room Number -->
+        <item>Social Studies</item> <!-- Course -->
+        <item>Bradley, Kevin</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c9">
+        <item>Traveling</item> <!-- Room Number -->
+        <item>LH</item> <!-- Course -->
+        <item>Brooks, Sarina</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c10">
+        <item>None</item> <!-- Room Number -->
+        <item>NJROTC</item> <!-- Course -->
+        <item>Brosnan, Mark</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c11">
+        <item>1454</item> <!-- Room Number -->
+        <item>English</item> <!-- Course -->
+        <item>Carlino, Kimberly</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c12">
+        <item>750</item> <!-- Room Number -->
+        <item>Math</item> <!-- Course -->
+        <item>Camara, Tony</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c13">
+        <item>620</item> <!-- Room Number -->
+        <item>Math</item> <!-- Course -->
+        <item>Cooke, Jeremy</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c14">
+        <item>1000</item> <!-- Room Number -->
+        <item>PE</item> <!-- Course -->
+        <item>Cooper, George</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c15">
+        <item>1110</item> <!-- Room Number -->
+        <item>Science</item> <!-- Course -->
+        <item>Cox, Jennifer</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c16">
+        <item>1125</item> <!-- Room Number -->
+        <item>Biology</item> <!-- Course -->
+        <item>Cripps, Stephan</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c17">
+        <item>220</item> <!-- Room Number -->
+        <item>MH Transition</item> <!-- Course -->
+        <item>Dixon, Sherrie</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c18">
+        <item>1000</item> <!-- Room Number -->
+        <item>PE</item> <!-- Course -->
+        <item>Earley, James</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c19">
+        <item>Drama</item> <!-- Room Number -->
+        <item>Drama</item> <!-- Course -->
+        <item>Ecker, Amity</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c20">
+        <item>1145</item> <!-- Room Number -->
+        <item>Physics</item> <!-- Course -->
+        <item>Eklund, Tom</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c21">
+        <item>1451</item> <!-- Room Number -->
+        <item>LH</item> <!-- Course -->
+        <item>Espley, Kristina</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c22">
+        <item>1457</item> <!-- Room Number -->
+        <item>English</item> <!-- Course -->
+        <item>Fanning, Michele</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c23">
+        <item>745</item> <!-- Room Number -->
+        <item>Math</item> <!-- Course -->
+        <item>Flisher, Matt</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c24">
+        <item>610</item> <!-- Room Number -->
+        <item>Math</item> <!-- Course -->
+        <item>Foggiano, Frank</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c25">
+        <item>Spec Ed</item> <!-- Room Number -->
+        <item>Spec Ed</item> <!-- Course -->
+        <item>Freeland, Bryan</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c26">
+        <item>1453</item> <!-- Room Number -->
+        <item>MH</item> <!-- Course -->
+        <item>Galvez, Gerardo</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c27">
+        <item>1408</item> <!-- Room Number -->
+        <item>English</item> <!-- Course -->
+        <item>Garrett, Amber</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c28">
+        <item>825</item> <!-- Room Number -->
+        <item>Social Studies</item> <!-- Course -->
+        <item>Ginn, Donald</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c29">
+        <item>1466</item> <!-- Room Number -->
+        <item>English</item> <!-- Course -->
+        <item>Ginn, LeAnne</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c30">
+        <item>535</item> <!-- Room Number -->
+        <item>Tech </item> <!-- Course -->
+        <item>Giovengo, Patrick</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c31">
+        <item>1000</item> <!-- Room Number -->
+        <item>PE</item> <!-- Course -->
+        <item>Goodrich, Danny</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c32">
+        <item>1105</item> <!-- Room Number -->
+        <item>Science</item> <!-- Course -->
+        <item>Hedberg, Paul</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c33">
+        <item>200</item> <!-- Room Number -->
+        <item>ASB</item> <!-- Course -->
+        <item>Hersch, Jeremy</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c34">
+        <item>720</item> <!-- Room Number -->
+        <item>Math</item> <!-- Course -->
+        <item>Heubach, Phlyn</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c35">
+        <item>810</item> <!-- Room Number -->
+        <item>Math</item> <!-- Course -->
+        <item>Hoeben, Trinity</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c36">
+        <item>1135</item> <!-- Room Number -->
+        <item>Chemistry</item> <!-- Course -->
+        <item>Holcomb, Michael</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c37">
+        <item>1414</item> <!-- Room Number -->
+        <item>Spanish</item> <!-- Course -->
+        <item>Jacobs, Anna</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c38">
+        <item>1462</item> <!-- Room Number -->
+        <item>English</item> <!-- Course -->
+        <item>Jensen, Laurie</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c39">
+        <item>Dance</item> <!-- Room Number -->
+        <item>Dance</item> <!-- Course -->
+        <item>Jiacoletti, Marta</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c40">
         <item>545</item> <!-- Room Number -->
+        <item>Social Studies</item> <!-- Course -->
+        <item>Jones, Holly</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c41">
+        <item>550</item> <!-- Room Number -->
+        <item>Social Studies</item> <!-- Course -->
+        <item>Jones, Sean</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c42">
+        <item>1411</item> <!-- Room Number -->
+        <item>Spanish</item> <!-- Course -->
+        <item>Joyce, Mercedes</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c43">
+        <item>225</item> <!-- Room Number -->
+        <item>Photo</item> <!-- Course -->
+        <item>Jungman, Carolyn</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c44">
+        <item>1461</item> <!-- Room Number -->
+        <item>PE</item> <!-- Course -->
+        <item>Karlo, Thomas</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c45">
+        <item>Child Dev</item> <!-- Room Number -->
+        <item>Child Dev</item> <!-- Course -->
+        <item>Kirby, Lou Ann</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c46">
+        <item>850</item> <!-- Room Number -->
+        <item>Social Studies</item> <!-- Course -->
+        <item>Knight, Brent</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c47">
+        <item>1120</item> <!-- Room Number -->
+        <item>Science</item> <!-- Course -->
+        <item>La Berge, Stephanie</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c48">
+        <item>NJROTC</item> <!-- Room Number -->
+        <item>NJROTC</item> <!-- Course -->
+        <item>Lapp, Brent</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c49">
+        <item>1463</item> <!-- Room Number -->
+        <item>English</item> <!-- Course -->
+        <item>Leathers, Laura</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c50">
+        <item>1130/1140</item> <!-- Room Number -->
+        <item>Chemistry</item> <!-- Course -->
+        <item>Lee, Jeffrey</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c51">
+        <item>Auto</item> <!-- Room Number -->
+        <item>Auto</item> <!-- Course -->
+        <item>Lehr, Jordie</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c52">
+        <item>805</item> <!-- Room Number -->
+        <item>Social Studies</item> <!-- Course -->
+        <item>Long, Megan</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c53">
+        <item>820</item> <!-- Room Number -->
+        <item>Math</item> <!-- Course -->
+        <item>LoPrell, Kristen</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c54">
+        <item>530</item> <!-- Room Number -->
+        <item>Tech</item> <!-- Course -->
+        <item>Mafnas, Jan</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c55">
+        <item>1406</item> <!-- Room Number -->
+        <item>French</item> <!-- Course -->
+        <item>Mahmoudi, Azita</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c56">
+        <item>760</item> <!-- Room Number -->
+        <item>Math</item> <!-- Course -->
+        <item>McLaughlin, Marcy</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c57">
+        <item>1403</item> <!-- Room Number -->
+        <item>English</item> <!-- Course -->
+        <item>Miller, Lara</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c58">
+        <item>625</item> <!-- Room Number -->
         <item>Tech Discovery</item> <!-- Course -->
-        <item>Mr. Benrud</item> <!-- Teacher -->
+        <item>Morrison, Grace</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c59">
+        <item>1416</item> <!-- Room Number -->
+        <item>Tech Discovery</item> <!-- Course -->
+        <item>Nager, Judy</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c60">
+        <item>1464</item> <!-- Room Number -->
+        <item>Tech Discovery</item> <!-- Course -->
+        <item>Neel, Debora</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c61">
+        <item>865</item> <!-- Room Number -->
+        <item>Tech Discovery</item> <!-- Course -->
+        <item>Neill, John</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c62">
+        <item>1000</item> <!-- Room Number -->
+        <item>Tech Discovery</item> <!-- Course -->
+        <item>Odom, Melissa</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c63">
+        <item>1469</item> <!-- Room Number -->
+        <item>Tech Discovery</item> <!-- Course -->
+        <item>Ogilvie, Jeremy</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c64">
+        <item>1458</item> <!-- Room Number -->
+        <item>Tech Discovery</item> <!-- Course -->
+        <item>Ortiz, Sara</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c65">
+        <item>715</item> <!-- Room Number -->
+        <item>Math</item> <!-- Course -->
+        <item>Pagano, Brie</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c66">
+        <item>210</item> <!-- Room Number -->
+        <item>Art</item> <!-- Course -->
+        <item>Pagarigan, Gwenne</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c67">
+        <item>1407</item> <!-- Room Number -->
+        <item>Spanish</item> <!-- Course -->
+        <item>Pantoja, Carmelina</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c68">
+        <item>1413</item> <!-- Room Number -->
+        <item>Spanish</item> <!-- Course -->
+        <item>Park, Hillary</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c69">
+        <item>1404</item> <!-- Room Number -->
+        <item>English</item> <!-- Course -->
+        <item>Patterson, Daemein</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c70">
+        <item>755</item> <!-- Room Number -->
+        <item>Math</item> <!-- Course -->
+        <item>Pennefather, Gary</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c71">
+        <item>Art</item> <!-- Room Number -->
+        <item>230</item> <!-- Course -->
+        <item>Phillips, Susan B</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c72">
+        <item>1419</item> <!-- Room Number -->
+        <item>Transition</item> <!-- Course -->
+        <item>Potter, Debbie</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c73">
+        <item>1150</item> <!-- Room Number -->
+        <item>Chemistry</item> <!-- Course -->
+        <item>Price, Tom</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c74">
+        <item>815</item> <!-- Room Number -->
+        <item>Sports Med</item> <!-- Course -->
+        <item>Ray, Chris</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c75">
+        <item>835</item> <!-- Room Number -->
+        <item>Geography</item> <!-- Course -->
+        <item>Raymond, Jennifer</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c76">
+        <item>775</item> <!-- Room Number -->
+        <item>Math</item> <!-- Course -->
+        <item>Ridgway, Robert</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c77">
+        <item>1417</item> <!-- Room Number -->
+        <item>MH | SH </item> <!-- Course -->
+        <item>Samokhvalof, Heather</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c78">
+        <item>1401</item> <!-- Room Number -->
+        <item>LH | AMP</item> <!-- Course -->
+        <item>Savage, Sherri</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c79">
+        <item>None</item> <!-- Room Number -->
+        <item>Admin | Speech</item> <!-- Course -->
+        <item>Schepis, Taimi</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c80">
+        <item>510</item> <!-- Room Number -->
+        <item>Special Ed</item> <!-- Course -->
+        <item>Schreiner, Karen</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c81">
+        <item>1467</item> <!-- Room Number -->
+        <item>English</item> <!-- Course -->
+        <item>Schultz, Heidi</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c82">
+        <item>None</item> <!-- Room Number -->
+        <item>Admin | Speech </item> <!-- Course -->
+        <item>Sigsbee, Jennifer</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c83">
+        <item>860</item> <!-- Room Number -->
+        <item>Social Science</item> <!-- Course -->
+        <item>Smith, Mike</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c84">
+        <item>1468</item> <!-- Room Number -->
+        <item>Special Ed</item> <!-- Course -->
+        <item>Stellin, Bill</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c85">
+        <item>1459</item> <!-- Room Number -->
+        <item>English</item> <!-- Course -->
+        <item>Stellin, Elizabeth</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c86">
+        <item>840</item> <!-- Room Number -->
+        <item>Social Science</item> <!-- Course -->
+        <item>Steveson, Ethan</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c87">
+        <item>1402</item> <!-- Room Number -->
+        <item>Special Ed</item> <!-- Course -->
+        <item>Taylor, Mary</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c88">
+        <item>565</item> <!-- Room Number -->
+        <item>English</item> <!-- Course -->
+        <item>Thren, Nicole</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c89">
+        <item>None</item> <!-- Room Number -->
+        <item>Traveling</item> <!-- Course -->
+        <item>Tiffany, Megan</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c90">
+        <item>1456</item> <!-- Room Number -->
+        <item>Special Ed</item> <!-- Course -->
+        <item>Tipton, April</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c91">
+        <item>1409</item> <!-- Room Number -->
+        <item>Special Ed</item> <!-- Course -->
+        <item>Van Houten, Kristina</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c92">
+        <item>1412</item> <!-- Room Number -->
+        <item>Spanish</item> <!-- Course -->
+        <item>Velarde, Melissa</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c93">
+        <item>780</item> <!-- Room Number -->
+        <item>Math</item> <!-- Course -->
+        <item>Vellone, Yvonne</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c94">
+        <item>1310</item> <!-- Room Number -->
+        <item>Music</item> <!-- Course -->
+        <item>Webb, Raymond</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c95">
+        <item>830</item> <!-- Room Number -->
+        <item>Social Science</item> <!-- Course -->
+        <item>Williams, Nicole</item> <!-- Teacher -->
+    </string-array>
+    <string-array name="c96">
+        <item>1115</item> <!-- Room Number -->
+        <item>Science</item> <!-- Course -->
+        <item>Youngblood, David</item> <!-- Teacher -->
     </string-array>
 
     <!-- Schedule Selection -->
