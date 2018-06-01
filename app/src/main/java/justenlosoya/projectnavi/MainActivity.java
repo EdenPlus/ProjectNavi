@@ -1,11 +1,7 @@
 package justenlosoya.projectnavi;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.preference.PreferenceManager;
-import android.support.annotation.IdRes;
 import android.support.design.widget.TabLayout;
-import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -14,8 +10,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.text.Layout;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,12 +17,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.content.SharedPreferences;
-import android.content.Context;
 
 import java.util.Calendar;
-import java.util.List;
-
-import justenlosoya.projectnavi.TouchImageView;
 
 import static android.preference.PreferenceManager.getDefaultSharedPreferences;
 
